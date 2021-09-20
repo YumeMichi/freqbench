@@ -1,0 +1,2 @@
+Kernel: Linux version 4.19.190-Ruby (violet@Evergarden) (Proton clang version 13.0.0 (https://github.com/llvm/llvm-project b4fd512c36ca344a3ff69350219e8b0a67e9472a), GNU ld (binutils-2.27-bd24d23f) 2.27.0.20170315) #2 SMP PREEMPT Thu Jun 24 06:24:52 CST 2021
+Python: Python 3.8.5

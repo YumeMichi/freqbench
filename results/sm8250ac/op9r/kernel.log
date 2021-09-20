@@ -1,0 +1,2278 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51df805e]
+[    0.000000] Linux version 4.19.190-Ruby (violet@Evergarden) (Proton clang version 13.0.0 (https://github.com/llvm/llvm-project b4fd512c36ca344a3ff69350219e8b0a67e9472a), GNU ld (binutils-2.27-bd24d23f) 2.27.0.20170315) #2 SMP PREEMPT Thu Jun 24 06:24:52 CST 2021
+[    0.000000] Machine model: OnePlus 9R
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fd400000, size 40 MiB
+[    0.000000] OF: reserved mem: initialized node mem_dump_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fb400000, size 32 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fa000000, size 20 MiB
+[    0.000000] OF: reserved mem: initialized node qseecom_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x00000000ffc00000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node mailbox_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f8c00000, size 20 MiB
+[    0.000000] OF: reserved mem: initialized node cnss_wlan_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ee800000, size 164 MiB
+[    0.000000] OF: reserved mem: initialized node secure_display_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ed800000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node user_contig_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ed400000, size 4 MiB
+[    0.000000] OF: reserved mem: initialized node cdsp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ec400000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node qseecom_ta_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ebc00000, size 8 MiB
+[    0.000000] OF: reserved mem: initialized node sdsp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000eac00000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node sp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ea000000, size 12 MiB
+[    0.000000] OF: reserved mem: initialized node adsp_region, compatible id shared-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x0000000080880000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node res_xbl_uefi_log_region@80880000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008bf00000, size 5 MiB
+[    0.000000] OF: reserved mem: initialized node pil_camera_region@8BF00000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008c400000, size 1 MiB
+[    0.000000] OF: reserved mem: initialized node pil_wlan_fw_region@8c400000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008c500000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node pil_ipa_fw_region@8c500000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008c510000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node pil_ipa_gsi_region@8c510000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008c51a000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node pil_gpu_region@8c51a000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008c600000, size 5 MiB
+[    0.000000] OF: reserved mem: initialized node pil_npu_region@8c600000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008cb00000, size 5 MiB
+[    0.000000] OF: reserved mem: initialized node pil_video_region@8cb00000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008d000000, size 5 MiB
+[    0.000000] OF: reserved mem: initialized node pil_cvp_region@8d000000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008d500000, size 20 MiB
+[    0.000000] OF: reserved mem: initialized node pil_cdsp_region@8d500000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008e900000, size 21 MiB
+[    0.000000] OF: reserved mem: initialized node pil_slpi_region@8e900000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008fe00000, size 37 MiB
+[    0.000000] OF: reserved mem: initialized node pil_adsp_region@8fe00000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x0000000092300000, size 1 MiB
+[    0.000000] OF: reserved mem: initialized node pil_spss_region@92300000, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x0000000092400000, size 70 MiB
+[    0.000000] OF: reserved mem: initialized node cdsp_secure_heap@92400000, compatible id removed-dma-pool
+[    0.000000] On node 0 totalpages: 2079456
+[    0.000000]   Normal zone: 32768 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 2079456 pages, LIFO batch:63
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] random: fast init done
+[    0.000000] percpu: Embedded 24 pages/cpu s59672 r8192 d30440 u98304
+[    0.000000] pcpu-alloc: s59672 r8192 d30440 u98304 alloc=24*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2046688
+[    0.000000] Kernel command line: isolcpus=1-7 nohz_full=1-7 loglevel=0 printk.devkmsg=on noirqdebug nodebugmon rcu_nocbs=0-7 kpti=off androidboot.boot_devices=soc/1d84000.ufshc androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000 loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 buildvariant=user androidboot.verifiedbootstate=orange androidboot.keymaster=1  androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=REDACTED androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_samsung_amb655x_dsc_cmd: androidboot.slot_suffix=_b rootwait ro init=/init androidboot.dtbo_idx=4 androidboot.dtb_idx=0 panel_type=normal androidboot.mode=fastboot androidboot.recoveryreason=000 androidboot.project_nam
+[    0.000000] IRQ lockup detection disabled
+[    0.000000] recovery mode reason:000
+[    0.000000] kernel oem_project 20828
+[    0.000000] kernel get_hw_version 13
+[    0.000000] kernel get_rf_version 11
+[    0.000000] kernel get_prj_version 15
+[    0.000000] log_buf_len individual max cpu contribution: 131072 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 917504 bytes
+[    0.000000] log_buf_len min size: 131072 bytes
+[    0.000000] log_buf_len: 1048576 bytes
+[    0.000000] early log buf free: 123080(93%)
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 7328720K/8317824K available (24062K kernel code, 2916K rwdata, 12296K rodata, 6144K init, 10343K bss, 632752K reserved, 356352K cma-reserved)
+[    0.000000] random: random: get_random_u64 called from __kmem_cache_create+0x28/0x390 with crng_init=1
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: Distributor has no Range Selector support
+[    0.000000] GICv3: no VLPI support, no direct LPI support
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] NO_HZ: Full dynticks CPUs: 1-7.
+[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
+[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
+[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000003] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000015] clocksource: Switched to clocksource arch_sys_counter
+[    0.001873] Console: colour dummy device 80x25
+[    0.001891] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.001899] pid_max: default: 32768 minimum: 301
+[    0.002020] Security Framework initialized
+[    0.002029] SELinux:  Initializing.
+[    0.002108] AppArmor: AppArmor disabled by boot time parameter
+[    0.002156] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.002171] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.003351] ASID allocator initialised with 65536 entries
+[    0.003425] rcu: Hierarchical SRCU implementation.
+[    0.005868] scm_mem_protection_init: SCM call failed
+[    0.006446] shmbridge is enabled
+[    0.006952] smp: Bringing up secondary CPUs ...
+[    0.007994] Detected VIPT I-cache on CPU1
+[    0.008055] arch_timer: CPU1: Trapping CNTVCT access
+[    0.008062] CPU1: Booted secondary processor 0x0000000100 [0x51df805e]
+[    0.009085] Detected VIPT I-cache on CPU2
+[    0.009121] arch_timer: CPU2: Trapping CNTVCT access
+[    0.009127] CPU2: Booted secondary processor 0x0000000200 [0x51df805e]
+[    0.010080] Detected VIPT I-cache on CPU3
+[    0.010120] arch_timer: CPU3: Trapping CNTVCT access
+[    0.010127] CPU3: Booted secondary processor 0x0000000300 [0x51df805e]
+[    0.011478] CPU features: enabling workaround for Mismatched cache type
+[    0.011483] CPU features: enabling workaround for ARM erratum 1542418
+[    0.011488] CPU features: detected: Hardware dirty bit management
+[    0.011494] Detected PIPT I-cache on CPU4
+[    0.011513] CPU features: Unsupported CPU feature variation detected.
+[    0.011552] arch_timer: CPU4: Trapping CNTVCT access
+[    0.011564] CPU4: Booted secondary processor 0x0000000400 [0x411fd0d0]
+[    0.012855] Detected PIPT I-cache on CPU5
+[    0.012912] arch_timer: CPU5: Trapping CNTVCT access
+[    0.012925] CPU5: Booted secondary processor 0x0000000500 [0x411fd0d0]
+[    0.014215] Detected PIPT I-cache on CPU6
+[    0.014272] arch_timer: CPU6: Trapping CNTVCT access
+[    0.014284] CPU6: Booted secondary processor 0x0000000600 [0x411fd0d0]
+[    0.015696] Detected PIPT I-cache on CPU7
+[    0.015726] arch_timer: CPU7: Trapping CNTVCT access
+[    0.015732] CPU7: Booted secondary processor 0x0000000700 [0x411fd0d0]
+[    0.015870] smp: Brought up 1 node, 8 CPUs
+[    0.015875] SMP: Total of 8 processors activated.
+[    0.015879] CPU features: detected: GIC system register CPU interface
+[    0.015881] CPU features: detected: Privileged Access Never
+[    0.015883] CPU features: detected: LSE atomic instructions
+[    0.015885] CPU features: detected: User Access Override
+[    0.015887] CPU features: detected: 32-bit EL0 Support
+[    0.015890] CPU features: detected: RAS Extension Support
+[    0.015892] CPU features: detected: CRC32 instructions
+[    0.016185] CPU: All CPU(s) started at EL1
+[    0.016223] alternatives: patching kernel code
+[    0.107630] Registered cp15_barrier emulation handler
+[    0.107643] Registered setend emulation handler
+[    0.107824] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.107834] futex hash table entries: 2048 (order: 5, 131072 bytes)
+[    0.116163] pinctrl core: initialized pinctrl subsystem
+[    0.116989] NET: Registered protocol family 16
+[    0.118586] schedtune: configured to support 6 boost groups
+[    0.118780] audit: initializing netlink subsys (disabled)
+[    0.119601] cpuidle: using governor menu
+[    0.119619] cpuidle: using governor qcom
+[    0.119762] NET: Registered protocol family 42
+[    0.120353] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.120446] audit: type=2000 audit(0.109:1): state=initialized audit_enabled=0 res=1
+[    0.121314] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.121820] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.122052] exit: IPA_USB init success!
+[    0.122139] kernel normal boot_mode = normal[0]
+[    0.128352] console [pstore-1] enabled
+[    0.128443] pstore: Registered ramoops as persistent store backend
+[    0.128448] ramoops: attached 0x400000@0xa9800000, ecc: 0/0
+[    0.133937] platform 80b00000.qseecom: assigned reserved memory node qseecom_region
+[    0.140184] platform soc:qcom,ipa_fws: assigned reserved memory node pil_ipa_gsi_region@8c510000
+[    0.140279] platform soc:qcom,ipa_uc: assigned reserved memory node pil_ipa_fw_region@8c500000
+[    0.141160] platform 17300000.qcom,lpass: assigned reserved memory node pil_adsp_region@8fe00000
+[    0.141329] platform 8300000.qcom,turing: assigned reserved memory node pil_cdsp_region@8d500000
+[    0.141435] platform aab0000.qcom,venus: assigned reserved memory node pil_video_region@8cb00000
+[    0.141620] platform 188101c.qcom,spss: assigned reserved memory node pil_spss_region@92300000
+[    0.141724] platform abb0000.qcom,cvpss: assigned reserved memory node pil_cvp_region@8d000000
+[    0.141824] platform 9800000.qcom,npu: assigned reserved memory node pil_npu_region@8c600000
+[    0.142098] platform soc:qcom,msm-adsprpc-mem: assigned reserved memory node adsp_region
+[    0.142639] platform soc:mem_dump: assigned reserved memory node mem_dump_region
+[    0.142900] platform 5c00000.qcom,ssc: assigned reserved memory node pil_slpi_region@8e900000
+[    0.145960] platform 88a7000.msm_tspp: assigned reserved memory node qseecom_region
+[    0.189005] msm_watchdog 17c10000.qcom,wdt: wdog absent resource not present
+[    0.189212] msm_watchdog 17c10000.qcom,wdt: MSM Watchdog Initialized
+[    0.191432] Unable to find DT property: qcom,msm-imem-emergency_download_mode
+[    0.195632] msm-dcc 1023000.dcc_v2: DCC list passed 3
+[    0.195816] msm-dcc 1023000.dcc_v2: All values written to enable.
+[    0.196169] msm-dcc 1023000.dcc_v2: DCC list passed 6
+[    0.196362] msm-dcc 1023000.dcc_v2: All values written to enable.
+[    0.196836] msm-dcc 1023000.dcc_v2: DCC list passed 7
+[    0.197023] msm-dcc 1023000.dcc_v2: All values written to enable.
+[    0.197468] msm-dcc 1023000.dcc_v2: Failed to add DCC data in Minidump
+[    0.198270] sps:sps is ready.
+[    0.198562] spmi spmi-0: PMIC arbiter version v5 (0x50010000)
+[    0.207841] oledb: Bringing 0uV into 4925000-4925000uV
+[    0.207980] ab: Bringing 0uV into 4600000-4600000uV
+[    0.208097] ibb: Bringing 0uV into 800000-800000uV
+[    0.208317] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.211765] pm8150_s3_level: supplied by pm8150a_s3_level
+[    0.211898] pm8150_s3_level_ao: supplied by pm8150a_s3_level_ao
+[    0.212450] pm8150a_s3_mmcx_sup_level: supplied by pm8150_s3_mmcx_sup_level
+[    0.219547] pm8150a_s4_level: supplied by pm8150a_s3_mmcx_sup_level
+[    0.219796] pm8150a_s4_level_ao: supplied by pm8150a_s3_level_ao
+[    0.225045] rpmh_regulator_probe: smpf1: could not find RPMh address for resource
+[    0.225204] rpmh_regulator_probe: smpf2: could not find RPMh address for resource
+[    0.225380] rpmh_regulator_probe: ldof1: could not find RPMh address for resource
+[    0.225552] rpmh_regulator_probe: ldof2: could not find RPMh address for resource
+[    0.225725] rpmh_regulator_probe: ldof3: could not find RPMh address for resource
+[    0.225895] rpmh_regulator_probe: ldof4: could not find RPMh address for resource
+[    0.226066] rpmh_regulator_probe: ldof5: could not find RPMh address for resource
+[    0.226238] rpmh_regulator_probe: ldof6: could not find RPMh address for resource
+[    0.226408] rpmh_regulator_probe: ldof7: could not find RPMh address for resource
+[    0.239550] MSM Memory Dump base table set up
+[    0.239558] MSM Memory Dump apps data table set up
+[    0.269546] cryptd: max_cpu_qlen set to 1000
+[    0.269886] vServices Framework 1.0
+[    0.272073] gdsc ad07004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272089] gdsc ad07004.qcom,gdsc: Dropping the link to regulator.34
+[    0.272181] gdsc ad0a004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272191] gdsc ad0a004.qcom,gdsc: Dropping the link to regulator.34
+[    0.272271] gdsc ad0b004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272279] gdsc ad0b004.qcom,gdsc: Dropping the link to regulator.34
+[    0.272357] gdsc ad08004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272366] gdsc ad08004.qcom,gdsc: Dropping the link to regulator.34
+[    0.272442] gdsc ad09004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272451] gdsc ad09004.qcom,gdsc: Dropping the link to regulator.34
+[    0.272528] gdsc ad0c144.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272537] gdsc ad0c144.qcom,gdsc: Dropping the link to regulator.34
+[    0.272615] gdsc af03000.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.272624] gdsc af03000.qcom,gdsc: Dropping the link to regulator.34
+[    0.272720] gdsc 3d9106c.qcom,gdsc: Linked as a consumer to regulator.7
+[    0.272836] gpu_cx_gdsc: supplied by pm8150_s3_level
+[    0.272950] gdsc 3d9100c.qcom,gdsc: Linked as a consumer to regulator.33
+[    0.273071] gpu_gx_gdsc: supplied by pm8150a_s1_level
+[    0.273219] gdsc abf0d18.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.273228] gdsc abf0d18.qcom,gdsc: Dropping the link to regulator.34
+[    0.273305] gdsc abf0bf8.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.273314] gdsc abf0bf8.qcom,gdsc: Dropping the link to regulator.34
+[    0.273397] gdsc abf0d98.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.273405] gdsc abf0d98.qcom,gdsc: Dropping the link to regulator.34
+[    0.273481] gdsc abf0c98.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.273490] gdsc abf0c98.qcom,gdsc: Dropping the link to regulator.34
+[    0.274843] qmp-aop-clk soc:qcom,aopclk: Registered clocks with AOP
+[    0.275528] gcc-kona 100000.qcom,gcc: Linked as a consumer to regulator.34
+[    0.275545] gcc-kona 100000.qcom,gcc: Linked as a consumer to regulator.7
+[    0.275571] gcc-kona 100000.qcom,gcc: Linked as a consumer to regulator.8
+[    0.317897] gcc-kona 100000.qcom,gcc: Registered GCC clocks
+[    0.318249] gpu_cc-kona 3d90000.qcom,gpucc: Linked as a consumer to regulator.7
+[    0.318274] gpu_cc-kona 3d90000.qcom,gpucc: Linked as a consumer to regulator.4
+[    0.326074] gpu_cc-kona 3d90000.qcom,gpucc: Registered GPU CC clocks
+[    0.326411] npu_cc-kona 9980000.qcom,npucc: Linked as a consumer to regulator.7
+[    0.358794] npu_cc-kona 9980000.qcom,npucc: Registered NPU_CC clocks
+[    0.359220] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.4
+[    0.359238] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.34
+[    0.359243] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.359248] video_cc-kona abf0000.qcom,videocc: Unable to register for bw voting
+[    0.359253] video_cc-kona abf0000.qcom,videocc: Dropping the link to regulator.34
+[    0.359267] video_cc-kona abf0000.qcom,videocc: Dropping the link to regulator.4
+[    0.363398] Minidump: Enabled with max number of regions 200
+[    0.364094] KPI: Bootloader start count = 91749
+[    0.364097] KPI: Bootloader end count = 478945
+[    0.364098] KPI: Bootloader display count = 983038937
+[    0.364100] KPI: Bootloader load kernel count = 4290683975
+[    0.364105] KPI: Kernel MPM timestamp = 501330
+[    0.364107] KPI: Kernel MPM Clock frequency = 32768
+[    0.364122] socinfo_print: v0.15, id=356, ver=2.1, raw_id=195, raw_ver=2, hw_plat=8, hw_plat_ver=65536
+                accessory_chip=1, hw_plat_subtype=0, pmic_model=65566, pmic_die_revision=196608 foundry_id=1 serial_number=1186370690 num_pmics=5 chip_family=0x5d raw_device_family=0x6 raw_device_number=0x8 nproduct_id=0x412 num_clusters=0x1 ncluster_array_offset=0xb0 num_defective_parts=0xc ndefective_parts_array_offset=0xb4 nmodem_supported=0x0
+[    0.364124] msm_bus_fabric_rpmh_init_driver
+[    0.364242] msm_bus: Probe started
+[    0.364857] msm_bus_device 16e0000.ad-hoc-bus: Bus type is missing
+[    0.364874] msm_bus_device 16e0000.ad-hoc-bus: Bus type is missing
+[    0.364952] msm_bus_device 16e0000.ad-hoc-bus: Bus type is missing
+[    0.367821] msm_bus: DT Parsing complete
+[    0.372103] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.372171] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.372509] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.393171] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
+[    0.393234] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
+[    0.393237] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
+[    0.393242] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+[    0.395138] register_client_adhoc:find path.src 161 dest 627
+[    0.395318] register_client_adhoc:Client handle 1 apps_smmu
+[    0.395391] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
+[    0.395395] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
+[    0.395399] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+[    0.396289] register_client_adhoc:find path.src 161 dest 627
+[    0.396451] register_client_adhoc:Client handle 2 apps_smmu
+[    0.396661] register_client_adhoc:find path.src 161 dest 627
+[    0.396820] register_client_adhoc:Client handle 3 apps_smmu
+[    0.397032] qsmmuv500-tbu 1518d000.mnoc_hf_0_tbu: Linked as a consumer to regulator.60
+[    0.397062] register_client_adhoc:find path.src 22 dest 773
+[    0.397143] register_client_adhoc:Client handle 4 mnoc_hf_0_tbu
+[    0.397353] qsmmuv500-tbu 15191000.mnoc_hf_1_tbu: Linked as a consumer to regulator.61
+[    0.397382] register_client_adhoc:find path.src 22 dest 773
+[    0.397460] register_client_adhoc:Client handle 5 mnoc_hf_1_tbu
+[    0.397665] register_client_adhoc:find path.src 154 dest 10070
+[    0.397723] register_client_adhoc:Client handle 6 apps_smmu
+[    0.397925] register_client_adhoc:find path.src 154 dest 10070
+[    0.397980] register_client_adhoc:Client handle 7 apps_smmu
+[    0.398188] register_client_adhoc:find path.src 161 dest 627
+[    0.398354] register_client_adhoc:Client handle 8 apps_smmu
+[    0.398572] register_client_adhoc:find path.src 161 dest 627
+[    0.398735] register_client_adhoc:Client handle 9 apps_smmu
+[    0.398949] qsmmuv500-tbu 151a5000.mnoc_sf_0_tbu: Linked as a consumer to regulator.62
+[    0.398977] register_client_adhoc:find path.src 137 dest 772
+[    0.399064] register_client_adhoc:Client handle 10 mnoc_sf_0_tbu
+[    0.399268] qsmmuv500-tbu 151a9000.mnoc_sf_1_tbu: Linked as a consumer to regulator.63
+[    0.399301] register_client_adhoc:find path.src 137 dest 772
+[    0.399380] register_client_adhoc:Client handle 11 mnoc_sf_1_tbu
+[    0.399954] Error: Driver 'arm-smmu' is already registered, aborting...
+[    0.400062] vgaarb: loaded
+[    0.400338] SCSI subsystem initialized
+[    0.400519] usbcore: registered new interface driver usbfs
+[    0.400565] usbcore: registered new interface driver hub
+[    0.400606] usbcore: registered new device driver usb
+[    0.400810] usb_phy_generic soc:usb_nop_phy: soc:usb_nop_phy supply vcc not found, using dummy regulator
+[    0.400828] usb_phy_generic soc:usb_nop_phy: Linked as a consumer to regulator.0
+[    0.401416] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800: PMIC@SID0 Power-on reason: Triggered from Hard Reset and 'cold' boot
+[    0.401446] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800: PMIC@SID0: Power-off reason: Triggered from PS_HOLD (PS_HOLD/MSM Controlled Shutdown)
+[    0.401692] input: qpnp_pon as /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/input/input0
+[    0.402183] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150b@2:qcom,power-on@800: PMIC@SID2 Power-on reason: Triggered from CBL (External Power Supply) and 'cold' boot
+[    0.402211] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150b@2:qcom,power-on@800: PMIC@SID2: Power-off reason: Triggered from SOFT (Software)
+[    0.402434] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800: PMIC@SID4 Power-on reason: Triggered from PON1 (Secondary PMIC) and 'cold' boot
+[    0.402462] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800: PMIC@SID4: Power-off reason: Triggered from SOFT (Software)
+[    0.402648] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.402653] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800: Register read failed, addr=0x0805, rc=-5
+[    0.402698] qcom,qpnp-power-on: probe of c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800 failed with error -5
+[    0.402784] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800: PMIC@SID8 Power-on reason: Triggered from PON1 (Secondary PMIC) and 'cold' boot
+[    0.402812] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800: PMIC@SID8: Power-off reason: Triggered from SOFT (Software)
+[    0.403034] media: Linux media interface: v0.10
+[    0.403066] videodev: Linux video capture interface: v2.00
+[    0.403086] pps_core: LinuxPPS API ver. 1 registered
+[    0.403089] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.403099] PTP clock support registered
+[    0.416975] virt zone: sensor[gpuss-1-usr] read error:-22
+[    0.416981] thermal thermal_zone25: failed to read out thermal zone (-22)
+[    0.419486] EDAC MC: Ver: 3.0.0
+[    0.419767] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=0 freq=300000 volt=620000, core_count 4
+[    0.419790] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=1 freq=403200 volt=620000, core_count 4
+[    0.419798] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=2 freq=518400 volt=620000, core_count 4
+[    0.419806] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=3 freq=614400 volt=620000, core_count 4
+[    0.419817] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=4 freq=691200 volt=620000, core_count 4
+[    0.419824] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=5 freq=787200 volt=632000, core_count 4
+[    0.419832] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=6 freq=883200 volt=640000, core_count 4
+[    0.419840] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=7 freq=979200 volt=652000, core_count 4
+[    0.419848] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=8 freq=1075200 volt=664000, core_count 4
+[    0.419855] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=9 freq=1171200 volt=676000, core_count 4
+[    0.419864] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=10 freq=1248000 volt=696000, core_count 4
+[    0.419871] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=11 freq=1344000 volt=724000, core_count 4
+[    0.419882] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=12 freq=1420800 volt=744000, core_count 4
+[    0.419890] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=13 freq=1516800 volt=768000, core_count 4
+[    0.419897] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=14 freq=1612800 volt=784000, core_count 4
+[    0.419905] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=15 freq=1708800 volt=800000, core_count 4
+[    0.419913] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=16 freq=1804800 volt=816000, core_count 4
+[    0.419921] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=17 freq=1804800 volt=816000, core_count 4
+[    0.419953] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=0 freq=710400 volt=620000, core_count 4
+[    0.419965] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=1 freq=825600 volt=648000, core_count 4
+[    0.419975] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=2 freq=940800 volt=672000, core_count 4
+[    0.419982] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=3 freq=1056000 volt=696000, core_count 4
+[    0.419989] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=4 freq=1171200 volt=720000, core_count 4
+[    0.419995] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=5 freq=1286400 volt=736000, core_count 4
+[    0.420002] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=6 freq=1382400 volt=752000, core_count 4
+[    0.420009] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=7 freq=1478400 volt=772000, core_count 4
+[    0.420042] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=8 freq=1574400 volt=788000, core_count 4
+[    0.420049] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=9 freq=1670400 volt=808000, core_count 4
+[    0.420055] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=10 freq=1766400 volt=828000, core_count 4
+[    0.420062] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=11 freq=1862400 volt=848000, core_count 4
+[    0.420068] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=12 freq=1958400 volt=876000, core_count 4
+[    0.420078] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=13 freq=2054400 volt=900000, core_count 4
+[    0.420085] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=14 freq=2150400 volt=924000, core_count 4
+[    0.420092] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=15 freq=2246400 volt=948000, core_count 4
+[    0.420099] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=16 freq=2342400 volt=972000, core_count 4
+[    0.420106] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=17 freq=2419200 volt=992000, core_count 4
+[    0.420113] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=18 freq=2419200 volt=992000, core_count 4
+[    0.420145] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=0 freq=844800 volt=608000, core_count 4
+[    0.420153] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=1 freq=960000 volt=628000, core_count 4
+[    0.420158] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=2 freq=1075200 volt=648000, core_count 4
+[    0.420163] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=3 freq=1190400 volt=668000, core_count 4
+[    0.420168] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=4 freq=1305600 volt=684000, core_count 4
+[    0.420173] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=5 freq=1401600 volt=700000, core_count 4
+[    0.420179] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=6 freq=1516800 volt=720000, core_count 4
+[    0.420184] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=7 freq=1632000 volt=736000, core_count 4
+[    0.420189] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=8 freq=1747200 volt=756000, core_count 4
+[    0.420195] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=9 freq=1862400 volt=776000, core_count 4
+[    0.420200] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=10 freq=1977600 volt=796000, core_count 4
+[    0.420205] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=11 freq=2073600 volt=812000, core_count 4
+[    0.420214] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=12 freq=2169600 volt=836000, core_count 4
+[    0.420219] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=13 freq=2265600 volt=860000, core_count 4
+[    0.420224] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=14 freq=2361600 volt=888000, core_count 4
+[    0.420230] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=15 freq=2457600 volt=908000, core_count 4
+[    0.420235] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=16 freq=2553600 volt=936000, core_count 4
+[    0.420240] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=17 freq=2649600 volt=960000, core_count 4
+[    0.420245] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=18 freq=2745600 volt=984000, core_count 4
+[    0.420251] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=19 freq=2841600 volt=1008000, core_count 4
+[    0.420256] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=20 freq=3187200 volt=1104000, core_count 3
+[    0.420261] qcom-cpufreq-hw 18591000.qcom,cpufreq-hw: index=21 freq=3187200 volt=1104000, core_count 4
+[    0.420266] qcom_cpufreq_hw_read_lut Skip: Index[20], Frequency[3187200], Core Count 3, Final Index 21 Actual Index 21 Prev_Freq[2841600] Prev_Index[19] Prev_CC[4]
+[    0.421659] cpufreq: driver qcom-cpufreq-hw up and running
+[    0.422433] CPUFREQ-HW cooling device 7 cpufreq-hw-7
+[    0.423481] platform soc:qcom,ion:qcom,ion-heap@22: assigned reserved memory node sdsp_region
+[    0.423678] platform soc:qcom,ion:qcom,ion-heap@26: assigned reserved memory node user_contig_region
+[    0.423779] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region
+[    0.423879] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    0.423978] platform soc:qcom,ion:qcom,ion-heap@13: assigned reserved memory node sp_region
+[    0.424082] platform soc:qcom,ion:qcom,ion-heap@10: assigned reserved memory node secure_display_region
+[    0.430120] ION heap system created
+[    0.440178] ION heap adsp created at 0x00000000ebc00000 with size 800000
+[    0.440185] ION heap secure_heap created
+[    0.440190] ION heap user_contig created at 0x00000000ed800000 with size 1000000
+[    0.440194] ION heap qsecom created at 0x00000000fa000000 with size 1400000
+[    0.440198] ION heap qsecom_ta created at 0x00000000ec400000 with size 1000000
+[    0.440202] ION heap spss created at 0x00000000eac00000 with size 1000000
+[    0.440206] ION heap secure_display created at 0x00000000ee800000 with size a400000
+[    0.500156] platform soc:qcom,ion:qcom,ion-heap@14: ion_secure_carveout: creating heap@0x92400000, size 0x4600000
+[    0.500165] ION heap secure_carveout created
+[    0.502491] PMIC@SID2: PM8150B v2.0 options: 0, 0, 0, 0
+[    0.502636] PMIC@SID4: (null) v2.0 options: 0, 0, 0, 0
+[    0.502702] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.502704] read failed rc=-5
+[    0.502706] Invalid REVID peripheral type: 00
+[    0.502721] qcom,qpnp-revid: probe of c440000.qcom,spmi:qcom,pm8009@a:qcom,revid@100 failed with error -22
+[    0.503558] register_client_adhoc:find path.src 90 dest 770
+[    0.503917] register_client_adhoc:find path.src 129 dest 512
+[    0.503996] register_client_adhoc:find path.src 90 dest 585
+[    0.504299] register_client_adhoc:find path.src 1 dest 676
+[    0.504555] register_client_adhoc:find path.src 143 dest 777
+[    0.504624] register_client_adhoc:Client handle 12 ipa
+[    0.511978] ipa 1e00000.qcom,ipa:ipa_smmu_ap: Linked as a consumer to 15000000.apps-smmu
+[    0.516507] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_ap to group 0
+[    0.517297] ipa 1e00000.qcom,ipa:ipa_smmu_wlan: Linked as a consumer to 15000000.apps-smmu
+[    0.522090] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_wlan to group 1
+[    0.522809] ipa 1e00000.qcom,ipa:ipa_smmu_uc: Linked as a consumer to 15000000.apps-smmu
+[    0.540487] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_uc to group 2
+[    0.541434] ipa 1e00000.qcom,ipa:ipa_smmu_11ad: Linked as a consumer to 15000000.apps-smmu
+[    0.546485] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_11ad to group 3
+[    0.552508] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat: Devfreq QCOM Firmware dev registered.
+[    0.552828] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat: Devfreq QCOM Firmware dev registered.
+[    0.553143] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat: Devfreq QCOM Firmware dev registered.
+[    0.553437] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat: Devfreq QCOM Firmware dev registered.
+[    0.553458] devfreq-qcom-fw 18590000.qcom,devfreq-l3: Devfreq QCOM Firmware parent dev inited.
+[    0.555594] SDAM base=0xb100 size=128 registered successfully
+[    0.555798] init_project_info: project_name: 20828 hw_version: 13 prj=15 rf_v1: 11 rf_v2: 0: rf_v3: 0  paltform_id:356
+[    0.555806] board info: 15 13 20828 Unknown 
+[    0.555899] Advanced Linux Sound Architecture Driver Initialized.
+[    0.556912] Bluetooth: Core ver 2.22
+[    0.556926] NET: Registered protocol family 31
+[    0.556928] Bluetooth: HCI device and connection manager initialized
+[    0.556938] Bluetooth: HCI socket layer initialized
+[    0.556943] Bluetooth: L2CAP socket layer initialized
+[    0.556949] Bluetooth: SCO socket layer initialized
+[    0.556958] NetLabel: Initializing
+[    0.556959] NetLabel:  domain hash size = 128
+[    0.556961] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.557013] NetLabel:  unlabeled traffic allowed by default
+[    0.557165] pcie:pcie_init.
+[    0.558409] register_client_adhoc:find path.src 45 dest 512
+[    0.558779] register_client_adhoc:Client handle 13 pcie0
+[    0.559081] pci-msm 1c00000.qcom,pcie: 1c00000.qcom,pcie supply vreg-3p3 not found, using dummy regulator
+[    0.559108] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.0
+[    0.559143] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.21
+[    0.559166] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.16
+[    0.559193] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.7
+[    0.559226] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.54
+[    0.559531] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+[    0.559535] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+[    0.560207] register_client_adhoc:find path.src 108 dest 512
+[    0.560411] register_client_adhoc:Client handle 14 pcie2
+[    0.560609] pci-msm 1c10000.qcom,pcie: 1c10000.qcom,pcie supply vreg-3p3 not found, using dummy regulator
+[    0.560621] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.0
+[    0.560641] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.21
+[    0.560659] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.16
+[    0.560676] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.7
+[    0.560702] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.56
+[    0.560916] msm_pcie_get_reg: PCIe: RC2: no tcsr resource found.
+[    0.560920] msm_pcie_get_reg: PCIe: RC2: no rumi resource found.
+[    0.560929] msm_pcie_probe: PCIe: RC2 could not get pinctrl sleep state
+[    0.561072] genirq: irq_chip msmgpio did not update eff. affinity mask of irq 403
+[    0.561361] register_client_adhoc:find path.src 22 dest 512
+[    0.561603] register_client_adhoc:find path.src 23 dest 512
+[    0.561814] register_client_adhoc:Client handle 15 bus-proxy-client
+[    0.562359] qupv3_geni_se 9c0000.qcom,qupv3_0_geni_se: Linked as a consumer to 15000000.apps-smmu
+[    0.566890] iommu: Adding device 9c0000.qcom,qupv3_0_geni_se to group 4
+[    0.567449] qupv3_geni_se ac0000.qcom,qupv3_1_geni_se: Linked as a consumer to 15000000.apps-smmu
+[    0.580471] iommu: Adding device ac0000.qcom,qupv3_1_geni_se to group 5
+[    0.581244] qupv3_geni_se 8c0000.qcom,qupv3_2_geni_se: Linked as a consumer to 15000000.apps-smmu
+[    0.585867] iommu: Adding device 8c0000.qcom,qupv3_2_geni_se to group 6
+[    0.586486] gdsc ad07004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.586644] register_client_adhoc:find path.src 1 dest 589
+[    0.587085] register_client_adhoc:Client handle 16 bps_gdsc_ahb
+[    0.587212] msm-bus-type slv-qhs-camera-cfg: Linked as a consumer to regulator.34
+[    0.587519] bps_gdsc: supplied by pm8150a_s4_level
+[    0.587648] gdsc ad0a004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.587676] register_client_adhoc:find path.src 1 dest 589
+[    0.587884] register_client_adhoc:Client handle 17 ife_0_gdsc_ahb
+[    0.588097] ife_0_gdsc: supplied by pm8150a_s4_level
+[    0.588219] gdsc ad0b004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.588247] register_client_adhoc:find path.src 1 dest 589
+[    0.588463] register_client_adhoc:Client handle 18 ife_1_gdsc_ahb
+[    0.588671] ife_1_gdsc: supplied by pm8150a_s4_level
+[    0.588791] gdsc ad08004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.588820] register_client_adhoc:find path.src 1 dest 589
+[    0.589028] register_client_adhoc:Client handle 19 ipe_0_gdsc_ahb
+[    0.589231] ipe_0_gdsc: supplied by pm8150a_s4_level
+[    0.589357] gdsc ad09004.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.589386] register_client_adhoc:find path.src 1 dest 589
+[    0.589595] register_client_adhoc:Client handle 20 sbi_gdsc_ahb
+[    0.589803] sbi_gdsc: supplied by pm8150a_s4_level
+[    0.589931] gdsc ad0c144.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.589962] register_client_adhoc:find path.src 1 dest 589
+[    0.590224] register_client_adhoc:Client handle 21 titan_top_gdsc_ahb
+[    0.590457] titan_top_gdsc: supplied by pm8150a_s4_level
+[    0.590590] gdsc af03000.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.590625] register_client_adhoc:find path.src 1 dest 590
+[    0.590844] register_client_adhoc:Client handle 22 mdss_core_gdsc_ahb
+[    0.590928] msm-bus-type slv-qhs-display-cfg: Linked as a consumer to regulator.34
+[    0.591113] mdss_core_gdsc: supplied by pm8150a_s4_level
+[    0.591579] gdsc abf0d18.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.591617] register_client_adhoc:find path.src 1 dest 596
+[    0.591843] register_client_adhoc:Client handle 23 mvs0_gdsc_ahb
+[    0.591925] msm-bus-type slv-qhs-venus-cfg: Linked as a consumer to regulator.34
+[    0.592145] mvs0_gdsc: supplied by pm8150a_s4_level
+[    0.592270] gdsc abf0bf8.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.592300] register_client_adhoc:find path.src 1 dest 596
+[    0.592520] register_client_adhoc:Client handle 24 mvs0c_gdsc_ahb
+[    0.592774] mvs0c_gdsc: supplied by pm8150a_s4_level
+[    0.592904] gdsc abf0d98.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.592942] register_client_adhoc:find path.src 1 dest 596
+[    0.593161] register_client_adhoc:Client handle 25 mvs1_gdsc_ahb
+[    0.593411] mvs1_gdsc: supplied by pm8150a_s4_level
+[    0.593538] gdsc abf0c98.qcom,gdsc: Linked as a consumer to regulator.34
+[    0.593567] register_client_adhoc:find path.src 1 dest 596
+[    0.593785] register_client_adhoc:Client handle 26 mvs1c_gdsc_ahb
+[    0.594037] mvs1c_gdsc: supplied by pm8150a_s4_level
+[    0.594235] cam_cc-kona ad00000.qcom,camcc: Linked as a consumer to regulator.4
+[    0.594255] cam_cc-kona ad00000.qcom,camcc: Linked as a consumer to regulator.34
+[    0.594275] register_client_adhoc:find path.src 1 dest 589
+[    0.594485] register_client_adhoc:Client handle 27 clk_camcc_debugfs
+[    0.634226] cam_cc-kona ad00000.qcom,camcc: Registered CAM CC clocks
+[    0.634690] disp_cc-kona af00000.qcom,dispcc: Linked as a consumer to regulator.34
+[    0.634822] register_client_adhoc:find path.src 1 dest 590
+[    0.635274] register_client_adhoc:Client handle 28 clk_dispcc_debugfs
+[    0.652463] disp_cc-kona af00000.qcom,dispcc: Registered Display CC clocks
+[    0.652614] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.4
+[    0.652640] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.34
+[    0.652660] register_client_adhoc:find path.src 1 dest 596
+[    0.652885] register_client_adhoc:Client handle 29 clk_videocc_debugfs
+[    0.659349] video_cc-kona abf0000.qcom,videocc: Registered Video CC clocks
+[    0.659939] clocksource: Switched to clocksource arch_sys_counter
+[    0.713446] VFS: Disk quotas dquot_6.6.0
+[    0.713523] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.714072] register_client_adhoc:find path.src 1 dest 589
+[    0.714452] register_client_adhoc:find path.src 1 dest 596
+[    0.714687] register_client_adhoc:find path.src 1 dest 590
+[    0.714898] register_client_adhoc:Client handle 30 clk_measure
+[    0.726669] mdss_pll_probe: MDSS pll label = MDSS DSI 0 PLL
+[    0.726675] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 0 PLL PLL SSC enabled
+[    0.734589] dsi_pll_clock_register_7nm: Registered DSI PLL ndx=0, clocks successfully
+[    0.734639] mdss_pll_probe: MDSS pll label = MDSS DSI 1 PLL
+[    0.734643] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 1 PLL PLL SSC enabled
+[    0.752310] dsi_pll_clock_register_7nm: Registered DSI PLL ndx=1, clocks successfully
+[    0.752364] mdss_pll_probe: MDSS pll label = MDSS DP PLL
+[    0.754905] NET: Registered protocol family 2
+[    0.755407] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes)
+[    0.755449] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.755680] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.756814] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.756909] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.756979] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.757174] NET: Registered protocol family 1
+[    0.757607] PCI: CLS 0 bytes, default 64
+[    0.757836] Trying to unpack rootfs image as initramfs...
+[    0.942125] Freeing initrd memory: 7488K
+[    0.943752] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.950536] Initialise system trusted keyrings
+[    0.950732] workingset: timestamp_bits=61 max_order=21 bucket_order=0
+[    0.953970] exFAT: file-system version 5.8-2arter97
+[    0.954299] ntfs: driver 2.1.32 [Flags: R/O].
+[    0.954398] fuse init (API version 7.27)
+[    0.958851] Key type asymmetric registered
+[    0.958856] Asymmetric key parser 'x509' registered
+[    0.958891] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 240)
+[    0.958897] io scheduler noop registered
+[    0.958901] io scheduler deadline registered
+[    0.958980] io scheduler cfq registered (default)
+[    0.958983] io scheduler mq-deadline registered
+[    0.958986] io scheduler kyber registered
+[    0.959053] io scheduler bfq registered
+[    0.961392] Virtual Services transport driver for OKL4 Axons
+[    0.965616] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.965620] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: read 0x4 failed
+[    0.965625] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: failed to populate gpio 0, ret=-5
+[    0.965636] qcom-spmi-gpio: probe of c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000 failed with error -5
+[    0.971347] gpi_dma 900000.qcom,gpi-dma: Linked as a consumer to 15000000.apps-smmu
+[    0.971659] iommu: Adding device 900000.qcom,gpi-dma to group 7
+[    0.972727] gpi_dma a00000.qcom,gpi-dma: Linked as a consumer to 15000000.apps-smmu
+[    0.972924] iommu: Adding device a00000.qcom,gpi-dma to group 8
+[    0.973596] gpi_dma 800000.qcom,gpi-dma: Linked as a consumer to 15000000.apps-smmu
+[    0.973794] iommu: Adding device 800000.qcom,gpi-dma to group 9
+[    0.976465] llcc_perfmon: Revision 2, has 1 memory controllers connected with LLCC
+[    0.976683] register_client_adhoc:find path.src 125 dest 512
+[    0.977190] register_client_adhoc:Client handle 31 scm_pas
+[    0.977199] minidump-id not found for ipa_fws
+[    0.977254] subsys-pil-tz soc:qcom,ipa_fws: for ipa_fws segments only will be dumped.
+[    0.977305] subsys-pil-tz soc:qcom,ipa_fws: for md_ipa_fws segments only will be dumped.
+[    0.977502] minidump-id not found for ipa_uc
+[    0.977546] subsys-pil-tz soc:qcom,ipa_uc: for ipa_uc segments only will be dumped.
+[    0.977588] subsys-pil-tz soc:qcom,ipa_uc: for md_ipa_uc segments only will be dumped.
+[    0.977803] subsys-pil-tz 17300000.qcom,lpass: Linked as a consumer to regulator.23
+[    0.977826] subsys-pil-tz 17300000.qcom,lpass: Linked as a consumer to regulator.15
+[    0.977832] minidump-id not found for adsp
+[    0.978420] subsys-pil-tz 8300000.qcom,turing: Linked as a consumer to regulator.7
+[    0.978452] register_client_adhoc:find path.src 154 dest 10070
+[    0.978508] register_client_adhoc:Client handle 32 pil-cdsp
+[    0.978513] minidump-id not found for cdsp
+[    0.979045] subsys-pil-tz aab0000.qcom,venus: Linked as a consumer to regulator.78
+[    0.979073] register_client_adhoc:find path.src 63 dest 512
+[    0.979310] register_client_adhoc:Client handle 33 pil-venus
+[    0.979316] minidump-id not found for venus
+[    0.979581] subsys-pil-tz 188101c.qcom,spss: Linked as a consumer to regulator.7
+[    0.979588] minidump-id not found for spss
+[    0.979930] minidump-id not found for cvpss
+[    0.979971] subsys-pil-tz abb0000.qcom,cvpss: for cvpss segments only will be dumped.
+[    0.980347] subsys-pil-tz abb0000.qcom,cvpss: for md_cvpss segments only will be dumped.
+[    0.980507] minidump-id not found for npu
+[    0.980547] subsys-pil-tz 9800000.qcom,npu: for npu segments only will be dumped.
+[    0.980589] subsys-pil-tz 9800000.qcom,npu: for md_npu segments only will be dumped.
+[    0.980694] subsys-restart: __get_smem_state(): Could not get smem-states qcom,force-stop
+[    0.980975] subsys-pil-tz 5c00000.qcom,ssc: Linked as a consumer to regulator.23
+[    0.980987] subsys-pil-tz 5c00000.qcom,ssc: Linked as a consumer to regulator.15
+[    0.980993] minidump-id not found for slpi
+[    0.981515] minidump-id not found for a650_zap
+[    0.981570] subsys-pil-tz soc:qcom,kgsl-hyp: for a650_zap segments only will be dumped.
+[    0.981609] subsys-pil-tz soc:qcom,kgsl-hyp: for md_a650_zap segments only will be dumped.
+[    0.987232] msm_geni_serial 998000.qcom,qup_uart: Wakeup byte 0xfd
+[    0.987397] msm_geni_serial 998000.qcom,qup_uart: Serial port0 added.FifoSize 64 is_console0
+[    0.987411] msm_geni_serial 998000.qcom,qup_uart: Failed to create dbg dir
+[    0.987865] 998000.qcom,qup_uart: ttyHS0 at MMIO 0x998000 (irq = 323, base_baud = 0) is a MSM
+[    0.988088] msm_geni_serial_init: Driver initialized
+[    0.998900] brd: module loaded
+[    1.003087] loop: module loaded
+[    1.003273] zram: Added device: zram0
+[    1.004085] QSEECOM: qseecom_init_control: qseecom.qsee_version = 0x1402000
+[    1.004147] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE
+[    1.007547] qce 1de0000.qcedev: Linked as a consumer to 15000000.apps-smmu
+[    1.007883] iommu: Adding device 1de0000.qcedev to group 10
+[    1.008145] register_client_adhoc:find path.src 125 dest 512
+[    1.008586] register_client_adhoc:Client handle 34 qcedev-noc
+[    1.008719] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.008952] qce 1de0000.qcedev: QTI Crypto 5.5.0 device found @0x1de0000
+[    1.009055] sps:BAM 0x0000000001dc4000 is registered.
+[    1.009140] sps:BAM 0x0000000001dc4000 (va:0x(____ptrval____)) enabled: ver:0x27, number of pipes:16
+[    1.009272] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 37
+[    1.009858] qce 1de0000.qcedev:qcom_cedev_ns_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.010118] iommu: Adding device 1de0000.qcedev:qcom_cedev_ns_cb to group 11
+[    1.010469] qce 1de0000.qcedev:qcom_cedev_s_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.011063] iommu: Adding device 1de0000.qcedev:qcom_cedev_s_cb to group 12
+[    1.011652] qcrypto 1de0000.qcrypto: Linked as a consumer to 15000000.apps-smmu
+[    1.011845] iommu: Adding device 1de0000.qcrypto to group 13
+[    1.012002] register_client_adhoc:find path.src 125 dest 512
+[    1.012285] register_client_adhoc:Client handle 35 qcrypto-noc
+[    1.012372] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.012602] qcrypto 1de0000.qcrypto: QTI Crypto 5.5.0 device found @0x1de0000
+[    1.012754] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 37
+[    1.013003] qcrypto 1de0000.qcrypto: qcrypto-ecb-aes
+[    1.013154] qcrypto 1de0000.qcrypto: qcrypto-cbc-aes
+[    1.013240] qcrypto 1de0000.qcrypto: qcrypto-ctr-aes
+[    1.013329] qcrypto 1de0000.qcrypto: qcrypto-ecb-des
+[    1.013410] qcrypto 1de0000.qcrypto: qcrypto-cbc-des
+[    1.013495] qcrypto 1de0000.qcrypto: qcrypto-ecb-3des
+[    1.013577] qcrypto 1de0000.qcrypto: qcrypto-cbc-3des
+[    1.013661] qcrypto 1de0000.qcrypto: qcrypto-xts-aes
+[    1.013749] qcrypto 1de0000.qcrypto: qcrypto-sha1
+[    1.013833] qcrypto 1de0000.qcrypto: qcrypto-sha256
+[    1.013917] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[    1.014001] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[    1.014093] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[    1.014203] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[    1.014286] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[    1.014369] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[    1.014458] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha1
+[    1.014542] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha256
+[    1.014624] qcrypto 1de0000.qcrypto: qcrypto-aes-ccm
+[    1.014707] qcrypto 1de0000.qcrypto: qcrypto-rfc4309-aes-ccm
+[    1.015514] ufshcd-qcom 1d84000.ufshc: no vccq2-voltage-level property.
+[    1.015646] ufshcd-qcom 1d84000.ufshc: Linked as a consumer to regulator.57
+[    1.015877] ufshcd-qcom 1d84000.ufshc: Linked as a consumer to regulator.31
+[    1.015898] ufshcd-qcom 1d84000.ufshc: Linked as a consumer to regulator.19
+[    1.015914] ufshcd-qcom 1d84000.ufshc: Linked as a consumer to regulator.10
+[    1.016322] register_client_adhoc:find path.src 123 dest 512
+[    1.016615] register_client_adhoc:find path.src 1 dest 757
+[    1.016883] register_client_adhoc:Client handle 36 ufshc_mem
+[    1.016958] ufs_qcom_phy_qmp_v4 1d87000.ufsphy_mem: Linked as a consumer to regulator.21
+[    1.016984] ufs_qcom_phy_qmp_v4 1d87000.ufsphy_mem: Linked as a consumer to regulator.16
+[    1.017015] ufshcd-qcom 1d84000.ufshc: Linked as a consumer to regulator.39
+[    1.018167] scsi host0: ufshcd
+[    1.040725] SCSI Media Changer driver v0.25 
+[    1.041719] spmi_pmic_arb_debug 6b0f000.qcom,spmi-debug: SPMI PMIC arbiter debug bus disabled by fuse
+[    1.041919] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[    1.043168] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    1.043170] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    1.043296] libphy: Fixed MDIO Bus: probed
+[    1.043318] tun: Universal TUN/TAP device driver, 1.6
+[    1.043487] sky2: driver version 1.30
+[    1.043745] PPP generic driver version 2.4.2
+[    1.043794] PPP BSD Compression module registered
+[    1.043798] PPP Deflate Compression module registered
+[    1.043817] PPP MPPE Compression module registered
+[    1.043820] NET: Registered protocol family 24
+[    1.043822] PPTP driver version 0.8.5
+[    1.044059] cnss_utils: Unable to create debugfs -19
+[    1.044099] wcnss_pre_alloc_init: Failed to create debugfs dir
+[    1.044100] CLD80211: Initializing
+[    1.044171] usbcore: registered new interface driver r8152
+[    1.044192] usbcore: registered new interface driver lan78xx
+[    1.044215] usbcore: registered new interface driver asix
+[    1.044235] usbcore: registered new interface driver ax88179_178a
+[    1.044257] usbcore: registered new interface driver cdc_ether
+[    1.044274] usbcore: registered new interface driver net1080
+[    1.044292] usbcore: registered new interface driver cdc_subset
+[    1.044309] usbcore: registered new interface driver zaurus
+[    1.044336] usbcore: registered new interface driver cdc_ncm
+[    1.044869] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.32
+[    1.044882] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.21
+[    1.044894] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    1.044901] msm-usb-ssphy-qmp 88e8000.ssphy: Dropping the link to regulator.21
+[    1.044918] msm-usb-ssphy-qmp 88e8000.ssphy: Dropping the link to regulator.32
+[    1.045079] msm-usb-ssphy-qmp 88eb000.ssphy: Linked as a consumer to regulator.32
+[    1.045095] msm-usb-ssphy-qmp 88eb000.ssphy: Linked as a consumer to regulator.21
+[    1.045565] msm-usb-hsphy 88e3000.hsphy: Linked as a consumer to regulator.16
+[    1.045584] msm-usb-hsphy 88e3000.hsphy: Linked as a consumer to regulator.13
+[    1.045603] msm-usb-hsphy 88e3000.hsphy: Linked as a consumer to regulator.24
+[    1.045818] msm-usb-hsphy 88e4000.hsphy: Linked as a consumer to regulator.16
+[    1.045830] msm-usb-hsphy 88e4000.hsphy: Linked as a consumer to regulator.13
+[    1.045845] msm-usb-hsphy 88e4000.hsphy: Linked as a consumer to regulator.24
+[    1.047494] msm-dwc3 a600000.ssusb: Linked as a consumer to 15000000.apps-smmu
+[    1.047705] iommu: Adding device a600000.ssusb to group 14
+[    1.047976] cnss: set_wlaon_pwr_ctrl is 1
+[    1.048032] cnss: CPR PMIC address is not available for smpf2
+[    1.048111] cnss2 b0000000.qcom,cnss-qca6390: Linked as a consumer to regulator.10
+[    1.048117] cnss: Got regulator: vdd-wlan-io, min_uv: 1800000, max_uv: 1800000, load_ua: 0, delay_us: 0, need_unvote: 1
+[    1.048248] cnss2 b0000000.qcom,cnss-qca6390: Linked as a consumer to regulator.44
+[    1.048253] cnss: Got regulator: wlan-ant-switch, min_uv: 1800000, max_uv: 1800000, load_ua: 0, delay_us: 0, need_unvote: 0
+[    1.048292] cnss2 b0000000.qcom,cnss-qca6390: Linked as a consumer to regulator.12
+[    1.048297] cnss: Got regulator: vdd-wlan-aon, min_uv: 950000, max_uv: 950000, load_ua: 0, delay_us: 0, need_unvote: 1
+[    1.048310] cnss: Got regulator: vdd-wlan-dig, min_uv: 950000, max_uv: 950000, load_ua: 0, delay_us: 0, need_unvote: 1
+[    1.048329] cnss2 b0000000.qcom,cnss-qca6390: Linked as a consumer to regulator.11
+[    1.048334] cnss: Got regulator: vdd-wlan-rfa1, min_uv: 1900000, max_uv: 2040000, load_ua: 0, delay_us: 0, need_unvote: 1
+[    1.048350] cnss2 b0000000.qcom,cnss-qca6390: Linked as a consumer to regulator.39
+[    1.048354] cnss: Got regulator: vdd-wlan-rfa2, min_uv: 1350000, max_uv: 1350000, load_ua: 0, delay_us: 0, need_unvote: 1
+[    1.048382] cnss: Failed to get optional clock rf_clk, err = -2
+[    1.048453] cnss: BT GPIO: 1121
+[    1.048457] cnss: Regulator vdd-wlan-io is being enabled
+[    1.048462] cnss: Regulator wlan-ant-switch is being enabled
+[    1.048617] msm-dwc3 a600000.ssusb: Linked as a consumer to regulator.58
+[    1.048829] cnss: Regulator vdd-wlan-aon is being enabled
+[    1.048914] cnss: Regulator vdd-wlan-dig is being enabled
+[    1.048918] cnss: Regulator vdd-wlan-rfa1 is being enabled
+[    1.049062] cnss: Regulator vdd-wlan-rfa2 is being enabled
+[    1.049128] cnss: BT_EN_GPIO State: Off. Delay WLAN_GPIO enable
+[    1.049572] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    1.049658] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    1.050330] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    1.051245] msm-dwc3 a600000.ssusb: Dropping the link to regulator.58
+[    1.051791] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.051795] ehci-pci: EHCI PCI platform driver
+[    1.051814] ehci-platform: EHCI generic platform driver
+[    1.052171] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.052173] ohci-pci: OHCI PCI platform driver
+[    1.052195] ohci-platform: OHCI generic platform driver
+[    1.053214] usbcore: registered new interface driver cdc_acm
+[    1.053217] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.053244] usbcore: registered new interface driver usb-storage
+[    1.053288] usbcore: registered new interface driver cp210x
+[    1.053301] usbserial: USB Serial support registered for cp210x
+[    1.053316] usbcore: registered new interface driver ftdi_sio
+[    1.053326] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    1.053342] usbcore: registered new interface driver usb_ehset_test
+[    1.053357] usbcore: registered new interface driver lvs
+[    1.053917] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: Linked as a consumer to regulator.13
+[    1.054088] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    1.054749] usbpd usbpd0: Could not get USB power_supply, deferring probe
+[    1.054863] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
+[    1.054979] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: Dropping the link to regulator.13
+[    1.055164] usbcore: registered new interface driver xpad
+[    1.055181] usbcore: registered new interface driver usb_acecad
+[    1.055198] usbcore: registered new interface driver aiptek
+[    1.055216] usbcore: registered new interface driver gtco
+[    1.055231] usbcore: registered new interface driver hanwang
+[    1.055248] usbcore: registered new interface driver kbtab
+[    1.055648] qcom,haptics c440000.qcom,spmi:qcom,pm8150b@3:qcom,haptics@c000: Linked as a consumer to regulator.67
+[    1.056207] input: qti-haptics as /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm8150b@3:qcom,haptics@c000/input/input1
+[    1.057069] rtc-pm8xxx c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc: rtc core: registered pm8xxx_rtc as rtc0
+[    1.057121] rtc-pm8xxx c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc: setting system clock to 1970-01-20 20:31:28 UTC (1715488)
+[    1.057363] i2c /dev entries driver
+[    1.057691] i2c_geni 984000.i2c: Bus frequency is set to 400000Hz
+[    1.058483] i2c_geni 988000.i2c: Bus frequency is set to 400000Hz
+[    1.059482] nq-nci 5-0028: ese GPIO <OPTIONAL> error getting from OF node
+[    1.059486] nq-nci 5-0028: error reading NFC VDDIO min and max value
+[    1.059489] nq-nci 5-0028: error reading NFC current value
+[    1.059539] nq-nci 5-0028: nqx_probe: ese gpio not provided
+[    1.059635] nq-nci 5-0028: nfc_ldo_config: regulator entry not present
+[    1.063504] PMIC@SID0: PM8008 v1.0 options: 0, 0, 0, 0
+[    1.067897] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.070741] qcom,pm8008-regulator 988000.i2c:qcom,pm8008@9:qcom,pm8008-regulator: Linked as a consumer to regulator.39
+[    1.070770] qcom,pm8008-regulator 988000.i2c:qcom,pm8008@9:qcom,pm8008-regulator: Linked as a consumer to regulator.83
+[    1.073779] qcom,pm8008-regulator 988000.i2c:qcom,pm8008@9:qcom,pm8008-regulator: Linked as a consumer to regulator.51
+[    1.075572] pm8008_l4: Bringing 2800000uV into 1800000-1800000uV
+[    1.081897] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.082097] i2c_geni 994000.i2c: Bus frequency is set to 400000Hz
+[    1.082908] i2c_geni a8c000.i2c: Bus frequency is set to 400000Hz
+[    1.083459] i2c_geni a94000.i2c: Bus frequency is set to 400000Hz
+[    1.084560] i2c_geni 884000.i2c: Bus frequency is set to 400000Hz
+[    1.085350] i2c_geni 884000.i2c: i2c error :-107
+[    1.085544] i2c_geni 884000.i2c: i2c error :-107
+[    1.085701] i2c_geni 884000.i2c: i2c error :-107
+[    1.085858] i2c_geni 884000.i2c: i2c error :-107
+[    1.085862] I2C PMIC: i2c_pmic_read: i2c_pmic_read failed for 3 retries, rc = -107
+[    1.085865] I2C PMIC: i2c_pmic_determine_initial_status: Couldn't read irq data rc=-107
+[    1.085867] I2C PMIC: i2c_pmic_probe: Couldn't determine initial status rc=-107
+[    1.085880] i2c_pmic: probe of 0-0010 failed with error -107
+[    1.086085] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.086490] i2c_geni 888000.i2c: Bus frequency is set to 100000Hz
+[    1.087357] msm_cvp:  err: Failed to create debugfs for msm_cvp
+[    1.088008] msm_cvp:  err: Failed to create debugfs for msm_cvp
+[    1.088541] msm_cvp_v4l2 ab00000.qcom,cvp:cvp_non_secure_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.088792] iommu: Adding device ab00000.qcom,cvp:cvp_non_secure_cb to group 15
+[    1.089160] msm_cvp_v4l2 ab00000.qcom,cvp:cvp_secure_nonpixel_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.090304] iommu: Adding device ab00000.qcom,cvp:cvp_secure_nonpixel_cb to group 16
+[    1.090642] msm_cvp_v4l2 ab00000.qcom,cvp:cvp_secure_pixel_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.091292] iommu: Adding device ab00000.qcom,cvp:cvp_secure_pixel_cb to group 17
+[    1.091473] platform ab00000.qcom,cvp:qcom,msm-cvp,mem_cdsp: assigned reserved memory node cdsp_region
+[    1.092145] msm_npu 9900000.qcom,msm_npu: Linked as a consumer to 15000000.apps-smmu
+[    1.092528] iommu: Adding device 9900000.qcom,msm_npu to group 18
+[    1.092724] NPU_INFO: npu_probe: 2568 unable to get qfprom_physical resource
+[    1.092757] msm_npu 9900000.qcom,msm_npu: Linked as a consumer to regulator.76
+[    1.092777] msm_npu 9900000.qcom,msm_npu: Linked as a consumer to regulator.7
+[    1.093088] register_client_adhoc:find path.src 154 dest 512
+[    1.093308] register_client_adhoc:find path.src 154 dest 620
+[    1.093595] register_client_adhoc:Client handle 37 9900000.qcom,msm_npu
+[    1.093598] NPU_INFO: npu_parse_dt_bw: 1895 NPU BW client sets up successfully
+[    1.098853] NPU_ERR: npu_debugfs_init: 360 debugfs_create_dir for npu failed, error -19
+[    1.099820] synx: synx device init start
+[    1.099954] synx: synx device init success
+[    1.101046] SMB2: smb5_parse_dt_misc: T1:120, T2:350, T3:400, fcc1:350, fcc1:350, cut1:200, cut2:200,full:4445
+[    1.101102] SMB2: smb5_parse_dt_misc: sw_iterm_ma=130,check_batt_full_by_sw=1
+[    1.101106] SMB2: smb5_parse_dt_misc: little_cold_iterm_ma=0
+[    1.101114] SMB2: smb5_parse_dt_misc: OTG_ICL:enable:1,CapThr:15,LowThr:1000000,NorThr:1500000
+[    1.101159] SMB2: smb5_parse_dt_misc: T0=-20, T1=0, T2=50, T3=120, T4=160, T5=450, T6=500
+[    1.101162] SMB2: smb5_parse_dt_misc: BATT_TEMP_LITTLE_COLD=500, 3950, 3680
+[    1.101164] SMB2: smb5_parse_dt_misc: BATT_TEMP_COOL=1050, 4435, 4235
+[    1.101166] SMB2: smb5_parse_dt_misc: BATT_TEMP_LITTLE_COOL=1100, 4435, 4335
+[    1.101168] SMB2: smb5_parse_dt_misc: BATT_TEMP_PRE_NORMAL=1100, 4435, 4335
+[    1.101170] SMB2: smb5_parse_dt_misc: BATT_TEMP_NORMAL=1100, 4435, 4335
+[    1.101172] SMB2: smb5_parse_dt_misc: BATT_TEMP_WARM=600, 4130, 4030
+[    1.101173] SMB2: smb5_parse_dt_misc: cutoff_volt_with_charger=3250, disable-pd=0
+[    1.101176] SMB2: smb5_parse_dt_misc: fv_offset_voltage_mv=50
+[    1.101179] SMB2: smb5_parse_dt_misc: normal_check_interval_period=300
+[    1.101183] SMB2: smb5_parse_dt_misc: fast_check_interval_period=50
+[    1.101186] SMB2: smb5_parse_dt_misc: fast_check_threshold_temp=33
+[    1.101189] SMB2: smb5_parse_dt_misc: high_temp_short_check_timeout=1500
+[    1.101192] SMB2: smb5_parse_dt_misc: first_protect_connecter_temp=60
+[    1.101195] SMB2: smb5_parse_dt_misc: second_protect_connecter_temp=45
+[    1.101198] SMB2: smb5_parse_dt_misc: second_protect_interval_temp=14
+[    1.101201] SMB2: smb5_parse_dt_misc: third_protect_rise_rate=3
+[    1.101204] SMB2: smb5_parse_dt_misc: third_protect_loop_temp=40
+[    1.101208] SMB2: smb5_parse_dt_misc: third_protect_interval_temp=8
+[    1.101211] SMB2: smb5_parse_dt_misc: third_protect_base_temp=20
+[    1.101215] SMB2: smb5_parse_dt_misc: skin_thermal_high_threshold=39
+[    1.101220] SMB2: smb5_parse_dt_misc: skin_thermal_pre_high_threshold=38
+[    1.101224] SMB2: smb5_parse_dt_misc: skin_thermal_warm_threshold=37
+[    1.101227] SMB2: smb5_parse_dt_misc: skin_thermal_pre_warm_threshold=36
+[    1.101231] SMB2: smb5_parse_dt_misc: skin_thermal_medium_threshold=34
+[    1.101235] SMB2: smb5_parse_dt_misc: skin_thermal_normal_threshold=33
+[    1.101240] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_high_threshold=41
+[    1.101244] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_pre_high_threshold=39
+[    1.101248] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_medium_threshold=38
+[    1.101252] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_normal_threshold=36
+[    1.101256] SMB2: smb5_parse_dt_misc: enable_dash_current_adjust=1
+[    1.101260] SMB2: smb5_parse_dt_misc: nor_skin_thermal_high_threshold=39
+[    1.101264] SMB2: smb5_parse_dt_misc: nor_skin_thermal_pre_high_threshold=38
+[    1.101268] SMB2: smb5_parse_dt_misc: nor_skin_thermal_warm_threshold=37
+[    1.101273] SMB2: smb5_parse_dt_misc: nor_skin_thermal_pre_warm_threshold=36
+[    1.101278] SMB2: smb5_parse_dt_misc: nor_skin_thermal_medium_threshold=34
+[    1.101283] SMB2: smb5_parse_dt_misc: nor_skin_thermal_normal_threshold=33
+[    1.101287] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_high_threshold=45
+[    1.101293] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_pre_high_threshold=44
+[    1.101298] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_warm_threshold=44
+[    1.101303] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_pre_warm_threshold=42
+[    1.101308] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_medium_threshold=42
+[    1.101313] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_normal_threshold=41
+[    1.101317] SMB2: smb5_parse_dt_misc: nor_call_on_current_ma=500
+[    1.101322] SMB2: smb5_parse_dt_misc: nor_skin_thermal_hi_current_ma=500
+[    1.101327] SMB2: smb5_parse_dt_misc: nor_skin_thermal_wrm_current_ma=800
+[    1.101332] SMB2: smb5_parse_dt_misc: nor_skin_thermal_med_current_ma=1000
+[    1.101336] SMB2: smb5_parse_dt_misc: enable_nor_current_adjust=1
+[    1.101340] SMB2: smb5_parse_dt_misc: op,slowy-charge-check=0
+[    1.101343] SMB2: smb5_parse_dt_misc: full_count_sw_num=2
+[    1.101398] SMB2: smb5_probe: Couldn't parse device tree rc=-517
+[    1.101820] FG: fg_gen4_parse_dt: use_external_fg=1
+[    1.101823] FG: fg_gen4_parse_dt: iskebab=1
+[    1.122185] debugfs is not enabled in the kernel
+[    1.122646] FG: fg_gen4_probe: battery SOC:87 voltage: 4205799uV temp: 242 id: 200000 ohms
+[    1.122952] FG: fg_gen4_probe: yfb FG GEN4 driver probed successfully
+[    1.126472] of_batterydata_get_best_profile: OP_4500mAh found
+[    1.127866] nq-nci 5-0028: nqx_probe: probing NFCC NQxxx exited successfully
+[    1.132398] msm_lmh_dcvs 18591000.qcom,cpufreq-hw:qcom,limits-dcvs: Linked as a consumer to regulator.25
+[    1.132804] msm_lmh_dcvs 18591000.qcom,cpufreq-hw:qcom,limits-dcvs: Linked as a consumer to regulator.17
+[    1.134809] device-mapper: uevent: version 1.0.3
+[    1.134923] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[    1.135799] bt_dt_parse_vreg_info: qca,bt-vdd-core: is not provided in device tree
+[    1.135802] bt_dt_parse_vreg_info: qca,bt-vdd-io: is not provided in device tree
+[    1.135805] bt_dt_parse_vreg_info: qca,bt-vdd-xtal: is not provided in device tree
+[    1.135808] bt_dt_parse_vreg_info: qca,bt-vdd-pa: is not provided in device tree
+[    1.135811] bt_dt_parse_vreg_info: qca,bt-vdd-ldo: is not provided in device tree
+[    1.135813] bt_dt_parse_vreg_info: qca,bt-chip-pwd: is not provided in device tree
+[    1.135834] bt_dt_parse_clk_info: clocks is not provided in device tree
+[    1.136410] EDAC DEVICE0: Giving out device to module soc:kryo-erp controller cache: DEV soc:kryo-erp (INTERRUPT)
+[    1.138296] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.138676] usbcore: registered new interface driver usbhid
+[    1.138678] usbhid: USB HID core driver
+[    1.138843] ashmem: initialized
+[    1.138885] wlan_hdd_state wlan major(489) initialized
+[    1.139262] bimc-bwmon 90b6400.qcom,cpu-cpu-llcc-bwmon: BW HWmon governor registered.
+[    1.139312] bimc-bwmon 9091000.qcom,cpu-llcc-ddr-bwmon: BW HWmon governor registered.
+[    1.139544] bimc-bwmon 60400.qcom,npu-npu-llcc-bwmon: BW HWmon governor registered.
+[    1.139599] bimc-bwmon 9093000.qcom,npu-llcc-ddr-bwmon: BW HWmon governor registered.
+[    1.139726] bimc-bwmon 70300.qcom,npudsp-npu-ddr-bwmon: BW HWmon governor registered.
+[    1.140698] FG: fg_psy_get_property: unsupported property 30
+[    1.140712] SMBLIB: load_data: chip is NULL !
+[    1.141003] arm-memlat-mon soc:qcom,cpu0-cpugrp:qcom,cpu0-cpu-l3-latmon: Memory Latency governor registered.
+[    1.141215] arm-memlat-mon soc:qcom,cpu0-cpugrp:qcom,cpu0-cpu-llcc-latmon: Memory Latency governor registered.
+[    1.141401] arm-memlat-mon soc:qcom,cpu0-cpugrp:qcom,cpu0-llcc-ddr-latmon: Memory Latency governor registered.
+[    1.141609] arm-memlat-mon soc:qcom,cpu4-cpugrp:qcom,cpu4-cpu-l3-latmon: Memory Latency governor registered.
+[    1.141776] arm-memlat-mon soc:qcom,cpu4-cpugrp:qcom,cpu7-cpu-l3-latmon: Memory Latency governor registered.
+[    1.141947] arm-memlat-mon soc:qcom,cpu4-cpugrp:qcom,cpu4-cpu-llcc-latmon: Memory Latency governor registered.
+[    1.142120] arm-memlat-mon soc:qcom,cpu4-cpugrp:qcom,cpu4-llcc-ddr-latmon: Memory Latency governor registered.
+[    1.142287] arm-memlat-mon soc:qcom,cpu4-cpugrp:qcom,cpu4-computemon: Compute governor registered.
+[    1.142447] arm-memlat-mon soc:qcom,cpu4-cpugrp:qcom,cpu4-qoslatmon: Memory Latency governor registered.
+[    1.143174] register_client_adhoc:find path.src 1 dest 627
+[    1.143508] register_client_adhoc:Client handle 38 soc:qcom,snoc_cnoc_keepalive
+[    1.143961] register_client_adhoc:find path.src 1 dest 770
+[    1.144029] register_client_adhoc:Client handle 39 soc:qcom,cpu-cpu-llcc-bw
+[    1.144595] register_client_adhoc:find path.src 129 dest 512
+[    1.144663] register_client_adhoc:Client handle 40 soc:qcom,cpu-llcc-ddr-bw
+[    1.145145] register_client_adhoc:find path.src 154 dest 770
+[    1.145266] register_client_adhoc:Client handle 41 soc:qcom,npu-npu-llcc-bw
+[    1.145665] register_client_adhoc:find path.src 770 dest 512
+[    1.145770] register_client_adhoc:Client handle 42 soc:qcom,npu-llcc-ddr-bw
+[    1.146115] register_client_adhoc:find path.src 154 dest 512
+[    1.146305] register_client_adhoc:Client handle 43 soc:qcom,npudsp-npu-ddr-bw
+[    1.146669] register_client_adhoc:find path.src 154 dest 512
+[    1.147075] register_client_adhoc:Client handle 44 soc:qcom,npu-npu-ddr-latfloor
+[    1.147359] register_client_adhoc:find path.src 1 dest 770
+[    1.147435] register_client_adhoc:Client handle 45 soc:qcom,cpu0-cpu-llcc-lat
+[    1.147762] register_client_adhoc:find path.src 1 dest 770
+[    1.147826] register_client_adhoc:Client handle 46 soc:qcom,cpu4-cpu-llcc-lat
+[    1.148214] register_client_adhoc:find path.src 129 dest 512
+[    1.148283] register_client_adhoc:Client handle 47 soc:qcom,cpu0-llcc-ddr-lat
+[    1.148593] register_client_adhoc:find path.src 129 dest 512
+[    1.148658] register_client_adhoc:Client handle 48 soc:qcom,cpu4-llcc-ddr-lat
+[    1.149029] register_client_adhoc:find path.src 129 dest 512
+[    1.149095] register_client_adhoc:Client handle 49 soc:qcom,cpu4-cpu-ddr-latfloor
+[    1.149625] register_client_adhoc:find path.src 26 dest 512
+[    1.149769] register_client_adhoc:Client handle 51 soc:qcom,gpubw
+[    1.151051] cnss: Assert WLAN_EN GPIO successfully
+[    1.151071] msm_pcie_enable: PCIe: Assert the reset of endpoint of RC0.
+[    1.153046] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 1
+[    1.153612] scsi 0:0:0:49488: Well-known LUN    SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.154734] scsi 0:0:0:49476: Well-known LUN    SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.154811] msm_pcie_enable: PCIe: RC0: PCIE20_PARF_INT_ALL_MASK: 0x7f80d202
+[    1.155005] FG: fg_psy_get_property: unsupported property 1
+[    1.155454] scsi 0:0:0:49456: Well-known LUN    SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.157001] pcie_phy_init: PCIe RC0 PHY is ready!
+[    1.158719] qcom-llcc-pmu 9095000.llcc-pmu: Registered llcc_pmu, type: 9
+[    1.159356] scsi 0:0:0:0: Direct-Access     SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.159788] scsi 0:0:0:1: Direct-Access     SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.160182] scsi 0:0:0:2: Direct-Access     SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.160555] scsi 0:0:0:3: Direct-Access     SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.160914] scsi 0:0:0:4: Direct-Access     SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.161276] scsi 0:0:0:5: Direct-Access     SAMSUNG  KLUEG8UHDB-C2D1  0900 PQ: 0 ANSI: 6
+[    1.161536] coresight-tmc 6048000.tmc: Linked as a consumer to 15000000.apps-smmu
+[    1.163128] iommu: Adding device 6048000.tmc to group 19
+[    1.163336] sd 0:0:0:0: Power-on or device reset occurred
+[    1.163352] sd 0:0:0:1: Power-on or device reset occurred
+[    1.163361] sd 0:0:0:2: Power-on or device reset occurred
+[    1.164403] coresight-dynamic-funnel 6902000.funnel: Linked as a consumer to regulator.64
+[    1.164424] coresight-dynamic-funnel 6902000.funnel: Linked as a consumer to regulator.65
+[    1.166715] coresight-dynamic-funnel 6c44000.funnel: Linked as a consumer to regulator.76
+[    1.166729] coresight-dynamic-funnel 6c44000.funnel: Linked as a consumer to regulator.7
+[    1.167022] msm_pcie_enable: PCIe: Release the reset of endpoint of RC0.
+[    1.168255] sd 0:0:0:1: [sdb] Write Protect is off
+[    1.168260] sd 0:0:0:1: [sdb] Mode Sense: 00 32 00 10
+[    1.168297] sd 0:0:0:0: [sda] Write Protect is off
+[    1.168301] sd 0:0:0:0: [sda] Mode Sense: 00 32 00 10
+[    1.168336] sd 0:0:0:2: [sdc] Write Protect is off
+[    1.168340] sd 0:0:0:2: [sdc] Mode Sense: 00 32 00 10
+[    1.168546] sd 0:0:0:1: [sdb] Optimal transfer size 524288 bytes
+[    1.168715] sd 0:0:0:2: [sdc] Optimal transfer size 524288 bytes
+[    1.168826] sd 0:0:0:0: [sda] Optimal transfer size 524288 bytes
+[    1.171437] coresight-stm 6002000.stm: stm_register_device failed, probing deffered
+[    1.171516] OF: graph: no port node found in /soc/cti@78e0000
+[    1.171631] OF: graph: no port node found in /soc/cti@78f0000
+[    1.171744] OF: graph: no port node found in /soc/cti@7900000
+[    1.171852] OF: graph: no port node found in /soc/cti@6e01000
+[    1.172118] OF: graph: no port node found in /soc/cti@6e02000
+[    1.172231] OF: graph: no port node found in /soc/cti@6e03000
+[    1.172398] OF: graph: no port node found in /soc/cti@6e0c000
+[    1.172506] OF: graph: no port node found in /soc/cti@6e0d000
+[    1.172755] OF: graph: no port node found in /soc/cti@6e0e000
+[    1.172871] OF: graph: no port node found in /soc/cti@6e11000
+[    1.173098] OF: graph: no port node found in /soc/cti@6e21000
+[    1.173230] OF: graph: no port node found in /soc/cti@6c09000
+[    1.173345] OF: graph: no port node found in /soc/cti@6c0a000
+[    1.173720]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7 sda8 sda9 sda10 sda11 sda12 sda13 sda14 sda15 sda16 sda17 sda18 sda19 sda20 sda21 sda22 sda23 sda24
+[    1.174943]  sdc: sdc1 sdc2
+[    1.175257] OF: graph: no port node found in /soc/cti@6c2a000
+[    1.175321]  sdb: sdb1 sdb2
+[    1.176202] sd 0:0:0:3: Power-on or device reset occurred
+[    1.176321] sd 0:0:0:4: Power-on or device reset occurred
+[    1.176886] sd 0:0:0:4: [sde] Write Protect is off
+[    1.176890] sd 0:0:0:4: [sde] Mode Sense: 00 32 00 10
+[    1.176910] sd 0:0:0:3: [sdd] Write Protect is off
+[    1.176914] sd 0:0:0:3: [sdd] Mode Sense: 00 32 00 10
+[    1.177103] sd 0:0:0:4: [sde] Optimal transfer size 524288 bytes
+[    1.177213] sd 0:0:0:3: [sdd] Optimal transfer size 524288 bytes
+[    1.178365] sd 0:0:0:5: Power-on or device reset occurred
+[    1.178457] OF: graph: no port node found in /soc/cti@6c2b000
+[    1.178566] OF: graph: no port node found in /soc/cti@6c2c000
+[    1.178669] OF: graph: no port node found in /soc/cti@6010000
+[    1.178772] OF: graph: no port node found in /soc/cti@6011000
+[    1.179056] OF: graph: no port node found in /soc/cti@6012000
+[    1.179170] OF: graph: no port node found in /soc/cti@6013000
+[    1.179400] OF: graph: no port node found in /soc/cti@6014000
+[    1.179599]  sdd: sdd1 sdd2 sdd3 sdd4 sdd5 sdd6
+[    1.180261] OF: graph: no port node found in /soc/cti@6015000
+[    1.180603] OF: graph: no port node found in /soc/cti@6016000
+[    1.180752]  sde: sde1 sde2 sde3 sde4 sde5 sde6 sde7 sde8 sde9 sde10 sde11 sde12 sde13 sde14 sde15 sde16 sde17 sde18 sde19 sde20 sde21 sde22 sde23 sde24 sde25 sde26 sde27 sde28 sde29 sde30 sde31 sde32 sde33 sde34 sde35 sde36 sde37 sde38 sde39 sde40 sde41 sde42 sde43 sde44 sde45 sde46 sde47 sde48 sde49 sde50 sde51 sde52 sde53 sde54 sde55 sde56 sde57 sde58 sde59 sde60 sde61 sde62 sde63 sde64 sde65 sde66 sde67 sde68 sde69 sde70 sde71 sde72 sde73 sde74 sde75 sde76
+[    1.183512] msm_pcie_link_train: PCIe RC0 link initialized
+[    1.183740] pci-msm 1c00000.qcom,pcie: host bridge /soc/qcom,pcie@1c00000 ranges:
+[    1.183748] pci-msm 1c00000.qcom,pcie:   No bus range found for /soc/qcom,pcie@1c00000, using [bus 00-ff]
+[    1.183758] pci-msm 1c00000.qcom,pcie:    IO 0x60200000..0x602fffff -> 0x60200000
+[    1.183767] pci-msm 1c00000.qcom,pcie:   MEM 0x60300000..0x63ffffff -> 0x60300000
+[    1.184141] pci-msm 1c00000.qcom,pcie: PCI host bridge to bus 0000:00
+[    1.184146] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.184150] pci_bus 0000:00: root bus resource [io  0x0000-0xfffff] (bus address [0x60200000-0x602fffff])
+[    1.184154] pci_bus 0000:00: root bus resource [mem 0x60300000-0x63ffffff]
+[    1.184198] pci 0000:00:00.0: [17cb:010b] type 01 class 0x060400
+[    1.184272] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    1.184427] pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+[    1.190963] sd 0:0:0:5: [sdf] Write Protect is off
+[    1.190986] sd 0:0:0:5: [sdf] Mode Sense: 00 32 00 10
+[    1.191240] sd 0:0:0:5: [sdf] Optimal transfer size 524288 bytes
+[    1.195459]  sdf: sdf1 sdf2 sdf3 sdf4 sdf5 sdf6 sdf7 sdf8 sdf9
+[    1.197808] OF: graph: no port node found in /soc/cti@6017000
+[    1.197920] OF: graph: no port node found in /soc/cti@6018000
+[    1.198025] OF: graph: no port node found in /soc/cti@6019000
+[    1.198130] OF: graph: no port node found in /soc/cti@601a000
+[    1.198237] OF: graph: no port node found in /soc/cti@601b000
+[    1.198343] OF: graph: no port node found in /soc/cti@601c000
+[    1.198447] OF: graph: no port node found in /soc/cti@601d000
+[    1.198550] OF: graph: no port node found in /soc/cti@601e000
+[    1.200435] OF: graph: no port node found in /soc/cti@601f000
+[    1.200550] OF: graph: no port node found in /soc/cti@7020000
+[    1.200663] OF: graph: no port node found in /soc/cti@7120000
+[    1.200773] OF: graph: no port node found in /soc/cti@7220000
+[    1.200888] OF: graph: no port node found in /soc/cti@7320000
+[    1.201005] OF: graph: no port node found in /soc/cti@7420000
+[    1.201116] OF: graph: no port node found in /soc/cti@7520000
+[    1.201238] OF: graph: no port node found in /soc/cti@7620000
+[    1.201354] OF: graph: no port node found in /soc/cti@7720000
+[    1.201471] OF: graph: no port node found in /soc/cti@6831000
+[    1.201580] OF: graph: no port node found in /soc/cti@6845000
+[    1.201694] OF: graph: no port node found in /soc/cti@6c61000
+[    1.201806] OF: graph: no port node found in /soc/cti@6c42000
+[    1.201919] OF: graph: no port node found in /soc/cti@6c43000
+[    1.202038] OF: graph: no port node found in /soc/cti@6c4b000
+[    1.202151] OF: graph: no port node found in /soc/cti@6b00000
+[    1.208950] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    1.209153] pci 0000:01:00.0: [17cb:1101] type 00 class 0xff0000
+[    1.209277] pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x000fffff 64bit]
+[    1.209619] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    1.209701] pci 0000:01:00.0: 4.000 Gb/s available PCIe bandwidth, limited by 5 GT/s x1 link at 0000:00:00.0 (capable of 7.876 Gb/s with 8 GT/s x1 link)
+[    1.210457] OF: graph: no port node found in /soc/cti@6b01000
+[    1.210581] OF: graph: no port node found in /soc/cti@6b02000
+[    1.210704] OF: graph: no port node found in /soc/cti@6b03000
+[    1.210824] OF: graph: no port node found in /soc/cti@6982000
+[    1.210944] OF: graph: no port node found in /soc/cti@698b000
+[    1.211065] OF: graph: no port node found in /soc/cti@6c38000
+[    1.213094] coresight-tpdm 6900000.tpdm: Linked as a consumer to regulator.64
+[    1.213114] coresight-tpdm 6900000.tpdm: Linked as a consumer to regulator.65
+[    1.216893] coresight-tpdm 6c47000.tpdm: Linked as a consumer to regulator.76
+[    1.216908] coresight-tpdm 6c47000.tpdm: Linked as a consumer to regulator.7
+[    1.217362] coresight-tpdm 6c40000.tpdm: Linked as a consumer to regulator.76
+[    1.217374] coresight-tpdm 6c40000.tpdm: Linked as a consumer to regulator.7
+[    1.217925] coresight-tpdm 6c41000.tpdm: Linked as a consumer to regulator.76
+[    1.217937] coresight-tpdm 6c41000.tpdm: Linked as a consumer to regulator.7
+[    1.237325] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+[    1.237378] pci 0000:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+[    1.237384] pci 0000:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+[    1.237389] pci 0000:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01] add_size 200000 add_align 100000
+[    1.237408] pci 0000:00:00.0: BAR 8: assigned [mem 0x60300000-0x605fffff]
+[    1.237413] pci 0000:00:00.0: BAR 9: assigned [mem 0x60600000-0x607fffff 64bit pref]
+[    1.237417] pci 0000:00:00.0: BAR 0: assigned [mem 0x60800000-0x60800fff 64bit]
+[    1.237446] pci 0000:00:00.0: BAR 7: assigned [io  0x1000-0x1fff]
+[    1.237456] pci 0000:01:00.0: BAR 0: assigned [mem 0x60300000-0x603fffff 64bit]
+[    1.237502] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    1.237508] pci 0000:00:00.0:   bridge window [io  0x1000-0x1fff]
+[    1.237524] pci 0000:00:00.0:   bridge window [mem 0x60300000-0x605fffff]
+[    1.237536] pci 0000:00:00.0:   bridge window [mem 0x60600000-0x607fffff 64bit pref]
+[    1.238779] OF: graph: no port node found in /soc/csr@6001000
+[    1.238839] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    1.238870] OF: graph: no port node found in /soc/csr@6b0c000
+[    1.238931] coresight-csr 6b0c000.csr: CSR initialized: coresight-swao-csr
+[    1.239300] OF: graph: no port node found in /soc/hwevent
+[    1.239362] coresight-hwevent soc:hwevent: Hardware Event driver initialized
+[    1.239694] coresight-dummy soc:dummy_sink: Dummy device initialized
+[    1.239849] coresight-dummy soc:tpdm@6b26000: Dummy device initialized
+[    1.240337] coresight-remote-etm soc:turing_etm0: Remote ETM initialized
+[    1.240499] coresight-remote-etm soc:audio_etm0: Remote ETM initialized
+[    1.240665] coresight-remote-etm soc:ssc_etm0: Remote ETM initialized
+[    1.240842] coresight-remote-etm soc:npu_etm0: Remote ETM initialized
+[    1.241056] OF: graph: no port node found in /soc/tgu@6b0b000
+[    1.243446] fingerprint_detect_probe
+[    1.243499] fingerprint_detect soc:fingerprint_detect: fp-gpio-id0 - gpio: 1177
+[    1.243502] fingerprint_detect soc:fingerprint_detect: fingerprint_detect_probe: gpio_is_valid(fp_detect->id0_gpio=1177)
+[    1.243511] fingerprint_detect_probe: 1
+[    1.243515] fingerprint_detect soc:fingerprint_detect: fingerprint_detect_probe: success
+[    1.243609] ======>log tri_key_m1120_driver_init_up
+[    1.243697] [M1120-DBG] tri_key_m1120_i2c_drv_probe(L1223) : [M1120-DBG-F.IN] tri_key_m1120_i2c_drv_probe
+[    1.243698] ======> allocation memory for p_m1120_data up tri_key_m1120_i2c_drv_probe
+[    1.243701] ======>  init mutex variable 
+[    1.243704] hall_m1120_up 5-000d: Use client->dev.of_node
+[    1.243708] hall_m1120_up 5-000d: ======> tri_key_m1120_parse_dt
+[    1.243720] hall_m1120_up 5-000d: irq_gpio : 1257
+[    1.243798] pci-msm-rc 0000:00:00.0: Linked as a consumer to 15000000.apps-smmu
+[    1.244003] iommu: Adding device 0000:00:00.0 to group 20
+[    1.244487] msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
+[    1.244569] cnss_pci 0000:01:00.0: Linked as a consumer to 15000000.apps-smmu
+[    1.247561] iommu: Adding device 0000:01:00.0 to group 21
+[    1.247719] cnss: PCI is probing, vendor ID: 0x17cb, device ID: 0x1101
+[    1.247752] cnss_pci 0000:01:00.0: assigned reserved memory node cnss_wlan_region
+[    1.247754] cnss: CMA area is cnss_wlan_region
+[    1.247891] cnss: Powerup is ignored
+[    1.247912] cnss: Ramdump size 0x420000
+[    1.247924] cnss2 b0000000.qcom,cnss-qca6390: for wlan segments only will be dumped.
+[    1.247969] cnss: Initializing SMMU
+[    1.247972] cnss: Enabling SMMU S1 stage
+[    1.247976] cnss: smmu_iova_start: 0x00000000a0000000, smmu_iova_len: 0x10000000
+[    1.247981] cnss: smmu_iova_ipa_start: 0x00000000b0000000, smmu_iova_ipa_len: 0x10000
+[    1.247985] cnss: iommu_geometry: 0
+[    1.247990] cnss: PCIe DRV is supported
+[    1.248015] cnss_pci 0000:01:00.0: BAR 0: assigned [mem 0x60300000-0x603fffff 64bit]
+[    1.248072] pci-msm-rc 0000:00:00.0: enabling device (0006 -> 0007)
+[    1.248091] cnss_pci 0000:01:00.0: enabling device (0000 -> 0002)
+[    1.248323] cnss: Config PCIe remap window register to 0x4000003f
+[    1.248336] cnss: Read register offset 0x1f8031c, val = 0x6
+[    1.248345] cnss: Write val 0x2 to register offset 0x1f8031c
+[    1.248974] cnss: MSI base data is 800
+[    1.248978] cnss: BAR starts at 0x0000000060300000, len-100000
+[    1.248983] cnss: Assign MSI to user: MHI, num_vectors: 3, user_base_data: 800, base_vector: 0
+[    1.248988] cnss: Number of assigned MSI for MHI is 3, base vector is 0
+[    1.248991] cnss: Get IRQ number 453 for vector index 0
+[    1.248994] cnss: Get IRQ number 454 for vector index 1
+[    1.248997] cnss: Get IRQ number 455 for vector index 2
+[    1.249512] cnss: Get device version info, family number: 0x4, device number: 0xa, major version: 0x2, minor version: 0x0
+[    1.249517] cnss: FW name added with prefix: qca6390/amss20.bin
+[    1.249520] cnss: FW name is qca6390/amss20.bin, FW fallback name is amss20.bin
+[    1.249529] cnss: Get PCI link status register: 4114
+[    1.249531] cnss: Default PCI link speed is 0x2, link width is 0x1
+[    1.249538] cnss: Config PCIe remap window register to 0x4000003c
+[    1.249545] cnss: Config PCIe remap window register to 0x4000003f
+[    1.249558] cnss: Read register offset 0x1f8031c, val = 0x2
+[    1.249565] cnss: Write val 0x3 to register offset 0x1f8031c
+[    1.300113] hall_m1120_up 5-000d: [M1120-ERR] tri_key_m1120_i2c_drv_probe(L1291) : ======> irq : 485
+[    1.300151] hall_m1120_up 5-000d: Linked as a consumer to regulator.49
+[    1.300265] hall_m1120_up 5-000d: 5-000d supply vio not found, using dummy regulator
+[    1.300275] hall_m1120_up 5-000d: Linked as a consumer to regulator.0
+[    1.340046] hall_m1120_up 5-000d: Power on=1. enabled=1
+[    1.360040] [M1120-DBG] m1120_reset_device(L0551) : wait 5ms after vdd power up
+[    1.360838] hall_m1120_up 5-000d: [M1120-INFO] m1120_set_operation_mode(L0477) : operation mode was chnaged to OPERATION_MODE_MEASUREMENT
+[    1.360842] hall_m1120_up 5-000d: [M1120-INFO] m1120_set_operation_mode(L0486) : opf = ox41 
+
+[    1.360846] hall_m1120_up 5-000d: [M1120-INFO] m1120_init_device(L0527) : initializing device was success
+[    1.360851] hall_m1120_up 5-000d: [M1120-INFO] tri_key_m1120_i2c_drv_probe(L1316) : (null) was found
+[    1.360942] input: hall_m1120_up as /devices/virtual/input/input2
+[    1.360981] hall_m1120_up 5-000d: [M1120-INFO] tri_key_m1120_i2c_drv_probe(L1327) : hall_m1120_up was initialized
+[    1.360992] [tri_state_key]  oneplus_register_hall : name : hall_up
+[    1.360994] [tri_state_key]  oneplus_register_hall : name == hall_up
+[    1.361030] ======> i2c addr : 13
+[    1.361033] [M1120-DBG] tri_key_m1120_i2c_drv_probe(L1349) : tri_key_m1120_i2c_drv_probe : hall_m1120_up was probed.
+
+[    1.361133] ======>log tri_key_m1120_driver_init_up, res : 0
+[    1.361136]  log tri_key_m1120_driver_init_down
+[    1.361239] [M1120-DBG] tri_key_m1120_i2c_drv_probe(L1224) : [M1120-DBG-F.IN] tri_key_m1120_i2c_drv_probe
+[    1.361241]   allocation memory for p_m1120_data down tri_key_m1120_i2c_drv_probe
+[    1.361243]    init mutex variable 
+[    1.361244]    config i2c client tri_key_m1120_i2c_drv_probe
+[    1.361248] hall_m1120_down 5-000c: Use client->dev.of_node
+[    1.361251] hall_m1120_down 5-000c:   tri_key_m1120_parse_dt
+[    1.361266] hall_m1120_down 5-000c: irq_gpio : 1238
+[    1.380086] msm_pcie_disable: PCIe: Assert the reset of endpoint of RC0.
+[    1.380331] cnss: De-assert WLAN_EN GPIO successfully
+[    1.380336] cnss: Regulator vdd-wlan-rfa2 is being disabled
+[    1.380374] cnss: Regulator vdd-wlan-rfa1 is being disabled
+[    1.380409] cnss: Regulator vdd-wlan-dig is being disabled
+[    1.380416] cnss: Regulator vdd-wlan-aon is being disabled
+[    1.380447] cnss: Regulator wlan-ant-switch is being disabled
+[    1.380468] cnss: Regulator vdd-wlan-io is being disabled
+[    1.380621] register_client_adhoc:find path.src 45 dest 512
+[    1.380884] register_client_adhoc:Client handle 50 msm-cnss
+[    1.381020] cnss: Platform driver probed successfully.
+[    1.420091] hall_m1120_down 5-000c: [M1120-ERR] tri_key_m1120_i2c_drv_probe(L1295) :   irq : 486
+[    1.420108] hall_m1120_down 5-000c: Linked as a consumer to regulator.49
+[    1.420130] hall_m1120_down 5-000c: 5-000c supply vio not found, using dummy regulator
+[    1.420141] hall_m1120_down 5-000c: Linked as a consumer to regulator.0
+[    1.460037] hall_m1120_down 5-000c: Power on=1. enabled=1
+[    1.480054] [M1120-DBG] m1120_reset_device(L0556) : wait 5ms after vdd power up
+[    1.480846] hall_m1120_down 5-000c: [M1120-INFO] m1120_set_operation_mode(L0482) : operation mode was chnaged to OPERATION_MODE_MEASUREMENT
+[    1.480850] hall_m1120_down 5-000c: [M1120-INFO] m1120_set_operation_mode(L0491) : opf = ox41 
+
+[    1.480853] hall_m1120_down 5-000c: [M1120-INFO] m1120_init_device(L0532) : initializing device was success
+[    1.480856] hall_m1120_down 5-000c: [M1120-INFO] tri_key_m1120_i2c_drv_probe(L1320) : (null) was found
+[    1.480915] input: hall_m1120_down as /devices/virtual/input/input3
+[    1.480949] hall_m1120_down 5-000c: [M1120-INFO] tri_key_m1120_i2c_drv_probe(L1331) : hall_m1120_down was initialized
+[    1.480957] [tri_state_key]  oneplus_register_hall : name : hall_down
+[    1.480959] [tri_state_key]  oneplus_register_hall : name == hall_down
+[    1.480988]   i2c addr : 12
+[    1.480990] [M1120-DBG] tri_key_m1120_i2c_drv_probe(L1356) : tri_key_m1120_i2c_drv_probe : hall_m1120_down was probed.
+
+[    1.481038]  log tri_key_m1120_driver_init_down, res : 0
+[    1.481040] [tri_state_key]  ist8801_up_init : call
+[    1.481109] [tri_state_key]  ist8801_i2c_probe : call 
+[    1.481113] [tri_state_key]  ist8801_parse_dts : data-range is not specified, use default value:0x0
+[    1.481133] hall-ist8801-up 5-0019: Linked as a consumer to regulator.49
+[    1.481153] hall-ist8801-up 5-0019: 5-0019 supply vio not found, using dummy regulator
+[    1.481160] hall-ist8801-up 5-0019: Linked as a consumer to regulator.0
+[    1.481206] kona-pinctrl f000000.pinctrl: pin GPIO_157 already requested by 5-000d; cannot claim for 5-0019
+[    1.481209] kona-pinctrl f000000.pinctrl: pin-157 (5-0019) status -22
+[    1.481213] kona-pinctrl f000000.pinctrl: could not request pin 157 (GPIO_157) from group gpio157  on device f000000.pinctrl
+[    1.481216] hall-ist8801-up 5-0019: Error applying setting, reverse things back
+[    1.510159] i2c_geni 984000.i2c: i2c error :-107
+[    1.510166] [tri_state_key]  ist8801_i2c_read_block : i2c_transfer error: (9 (____ptrval____) 1) -107
+[    1.510169] [tri_state_key]  ist8801_get_id : id = 0x0 
+[    1.510171] [tri_state_key]  ist8801_i2c_probe : current device id(0x00) is not ist8801 device id(0x81) 
+[    1.510173] [tri_state_key]  ist8801_i2c_probe : fail. 
+[    1.510225] [tri_state_key]  ist8801_down_init : call
+[    1.510293] [tri_state_key]  ist8801_i2c_probe : call 
+[    1.510297] [tri_state_key]  ist8801_parse_dts : data-range is not specified, use default value:0x0
+[    1.510318] hall-ist8801-down 5-0018: Linked as a consumer to regulator.49
+[    1.510338] hall-ist8801-down 5-0018: 5-0018 supply vio not found, using dummy regulator
+[    1.510346] hall-ist8801-down 5-0018: Linked as a consumer to regulator.0
+[    1.510389] kona-pinctrl f000000.pinctrl: pin GPIO_138 already requested by 5-000c; cannot claim for 5-0018
+[    1.510392] kona-pinctrl f000000.pinctrl: pin-138 (5-0018) status -22
+[    1.510396] kona-pinctrl f000000.pinctrl: could not request pin 138 (GPIO_138) from group gpio138  on device f000000.pinctrl
+[    1.510398] hall-ist8801-down 5-0018: Error applying setting, reverse things back
+[    1.540166] i2c_geni 984000.i2c: i2c error :-107
+[    1.540171] [tri_state_key]  ist8801_i2c_read_block : i2c_transfer error: (9 (____ptrval____) 1) -107
+[    1.540172] [tri_state_key]  ist8801_get_id : id = 0x0 
+[    1.540175] [tri_state_key]  ist8801_i2c_probe : current device id(0x00) is not ist8801 device id(0x81) 
+[    1.540177] [tri_state_key]  ist8801_i2c_probe : fail. 
+[    1.540465] BQ: bq27541_parse_dt: di->modify_soc_smooth=1
+[    1.540467] BQ: bq27541_parse_dt: BQ 4p45V=0, check-match=0
+[    1.541471] BQ: bq27541_battery_probe: probe success battery exist 
+[    1.541996] FASTCHG: dash_probe: dash_probe
+[    1.542535] FASTCHG: opchg_mcu_action: mcu action 1
+[    1.560080] FASTCHG: check_n76e_support: n76e 4p45 not exist
+[    1.560083] FASTCHG: check_enhance_support: warp dash not exist
+[    1.560087] FASTCHG: check_swarp_support: swarp dash exist
+[    1.560091] FASTCHG: check_4p45_support: ST 4p45 dash not exist
+[    1.560097] FASTCHG: dash_probe: dash_probe success
+[    1.560171] [SWARPCHG][da9313_driver_probe] call 
+[    1.560747] da9313_dump_registers success addr = 0, value = 0xa1
+[    1.561314] da9313_dump_registers success addr = 1, value = 0x1
+[    1.561881] da9313_dump_registers success addr = 2, value = 0x70
+[    1.562447] da9313_dump_registers success addr = 3, value = 0x0
+[    1.563013] da9313_dump_registers success addr = 4, value = 0x3
+[    1.563579] da9313_dump_registers success addr = 5, value = 0x5
+[    1.564145] da9313_dump_registers success addr = 6, value = 0xbb
+[    1.564712] da9313_dump_registers success addr = 7, value = 0x13
+[    1.565279] da9313_dump_registers success addr = 8, value = 0x23
+[    1.565846] da9313_dump_registers success addr = 9, value = 0x0
+[    1.566412] da9313_dump_registers success addr = 10, value = 0x4
+[    1.566979] da9313_dump_registers success addr = 11, value = 0x0
+[    1.567547] da9313_dump_registers success addr = 12, value = 0x1
+[    1.568114] da9313_dump_registers success addr = 13, value = 0x0
+[    1.568681] da9313_dump_registers success addr = 14, value = 0xf6
+[    1.569249] da9313_dump_registers success addr = 15, value = 0x1c
+[    1.569816] da9313_dump_registers success addr = 16, value = 0xc
+[    1.570385] da9313_dump_registers success addr = 17, value = 0x72
+[    1.570951] da9313_dump_registers success addr = 18, value = 0x0
+[    1.571518] da9313_dump_registers success addr = 19, value = 0xcb
+[    1.572085] da9313_dump_registers success addr = 20, value = 0xcd
+[    1.576118] [SWARPCHG][mp2650_driver_probe] call 
+[    1.579513] [SWARPCHG][mp2650_hardware_init]init mp2650 hardware! 
+[    1.579516] [SWARPCHG][mp2650_reset_charger] mp2650_reset_charger start 
+[    1.580512] [SWARPCHG][mp2650_enable_charging]mp2650 disable charging.
+[    1.580514] [SWARPCHG][mp2650_set_chging_term_enable]disable charging term.
+[    1.581963] [SWARPCHG][mp2650_float_voltage_write]vfloat_mv = 4370
+[    1.584558] [SWARPCHG][mp2650_charging_current_write_fast]set charge current = 500
+[    1.585043] [SWARPCHG][mp2650_set_termchg_current]term_current = 100
+[    1.587933] [SWARPCHG][mp2650_set_mps_otg_enable]enable start.
+[    1.590342] [SWARPCHG][mp2650_enable_suspend_charger] rc = 0
+[    1.590347] [SWARPCHG][mp2650_set_mps_otg_en_val]mps_otg_en_gpio not exist, return
+[    1.591793] [SWARPCHG][mp2650_enable_charging]mp2650 enable charging.
+[    1.592393] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8150@0:pinctrl@c000: pin_config_group_set op failed for group 1
+[    1.592396] mp2650-charger 7-005c: Error applying setting, reverse things back
+[    1.592413] [SWARPCHG][mp2650_mps_otg_en_gpio_init]gpio_val:0
+[    1.592415] chg->mps_otg_en_gpio =1095
+[    1.592416] [SWARPCHG][mp2650_gpio_init] mp2650_gpio_init FINISH
+[    1.592548] [SWARPCHG][mp2650_driver_probe] success
+[    1.593287] aw8697 driver version v1.4.2
+[    1.593495] aw8697_i2c_probe enter
+[    1.593506] aw8697_haptic 3-005a: aw8697_parse_dt: reset gpio provided ok
+[    1.593513] aw8697_haptic 3-005a: aw8697_parse_dt: irq gpio provided ok.
+[    1.593516] aw8697->count_go:0
+[    1.593529] aw8697_hw_reset enter
+[    1.599748] aw8697_read_chipid aw8697 detected
+[    1.600050] [SWARPCHG][mp2650_get_prop]mp2650 power supply prop 30 not supported
+[    1.601163] [SWARPCHG][mp2650_get_ibus_current]cur_high = 0x0, cur_low = 0x0, ibus_curr[0]
+[    1.603390] aw8697_interrupt_setup enter
+[    1.603580] aw8697_interrupt_setup: reg SYSINT=0x0
+[    1.605591] aac init =======
+[    1.605599] aw8697_vibrator_init enter
+[    1.605735] aw8697_haptic_init enter
+[    1.605763] aw8697_op_clean_status enter
+[    1.616905] aw8697_i2c_probe probe completed successfully!
+[    1.616958] stmvl53l1_init: Enter,rc=0
+[    1.617057] usbcore: registered new interface driver snd-usb-audio
+[    1.617222] uaudio-qmi soc:usb_audio_qmi_dev: Linked as a consumer to 15000000.apps-smmu
+[    1.617268] iommu: Adding device soc:usb_audio_qmi_dev to group 22
+[    1.624115] tfa98xx_i2c_init(): TFA98xx driver version v6.5.3
+[    1.624369] tfa98xx_i2c_probe(): addr=0x34
+[    1.626620] tfa98xx_i2c_probe(): TFA9874 detected
+[    1.626642] tfa98xx 0-0034: Skipping IRQ registration
+[    1.626658] tfa98xx_i2c_probe(): tfa98xx_i2c_probe Probe completed successfully!
+[    1.626713] tfa98xx_i2c_probe(): addr=0x35
+[    1.628958] tfa98xx_i2c_probe(): TFA9874 detected
+[    1.628969] tfa98xx 0-0035: Skipping IRQ registration
+[    1.628978] tfa98xx_i2c_probe(): tfa98xx_i2c_probe Probe completed successfully!
+[    1.629247] kona-pinctrl f000000.pinctrl: invalid function func2 in map table
+[    1.629256] kona-pinctrl f000000.pinctrl: invalid function func2 in map table
+[    1.629310] kona-pinctrl f000000.pinctrl: invalid function func2 in map table
+[    1.629319] kona-pinctrl f000000.pinctrl: invalid function func2 in map table
+[    1.653943] synx: registered bind ops for cam_sync
+[    1.654387] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_ife: Linked as a consumer to 15000000.apps-smmu
+[    1.654654] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_ife to group 23
+[    1.655005] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_jpeg: Linked as a consumer to 15000000.apps-smmu
+[    1.655155] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_jpeg to group 24
+[    1.655306] platform soc:qcom,cam_smmu:msm_cam_icp_fw: assigned reserved memory node pil_camera_region@8BF00000
+[    1.655754] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_icp: Linked as a consumer to 15000000.apps-smmu
+[    1.656056] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_icp to group 25
+[    1.656427] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_cpas_cdm: Linked as a consumer to 15000000.apps-smmu
+[    1.656571] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cpas_cdm to group 26
+[    1.657103] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_fd: Linked as a consumer to 15000000.apps-smmu
+[    1.657256] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_fd to group 27
+[    1.657948] cam-cpas ac40000.qcom,cam-cpas: Linked as a consumer to regulator.74
+[    1.659928] register_client_adhoc:find path.src 1 dest 589
+[    1.660215] register_client_adhoc:Client handle 52 cam_ahb
+[    1.660296] register_client_adhoc:find path.src 170 dest 512
+[    1.660510] register_client_adhoc:Client handle 53 cam_hf_0_mnoc
+[    1.660595] register_client_adhoc:find path.src 137 dest 512
+[    1.660816] register_client_adhoc:Client handle 54 cam_sf_0_mnoc
+[    1.660889] register_client_adhoc:find path.src 171 dest 512
+[    1.661097] register_client_adhoc:Client handle 55 cam_sf_icp_mnoc
+[    1.662945] msm_cam_cdm ac4d000.qcom,cpas-cdm0: Linked as a consumer to regulator.74
+[    1.664334] csid_17x acb5200.qcom,csid0: Linked as a consumer to regulator.74
+[    1.664355] csid_17x acb5200.qcom,csid0: Linked as a consumer to regulator.70
+[    1.664499] csid_17x acc4200.qcom,csid1: Linked as a consumer to regulator.74
+[    1.664519] csid_17x acc4200.qcom,csid1: Linked as a consumer to regulator.71
+[    1.665120] csid_lite acd9200.qcom,csid-lite0: Linked as a consumer to regulator.74
+[    1.665251] csid_lite acdb400.qcom,csid-lite1: Linked as a consumer to regulator.74
+[    1.665897] cam_vfe acb4000.qcom,ife0: Linked as a consumer to regulator.74
+[    1.665916] cam_vfe acb4000.qcom,ife0: Linked as a consumer to regulator.70
+[    1.667655] cam_vfe acc3000.qcom,ife1: Linked as a consumer to regulator.74
+[    1.667673] cam_vfe acc3000.qcom,ife1: Linked as a consumer to regulator.71
+[    1.669341] cam_vfe acd9000.qcom,ife-lite0: Linked as a consumer to regulator.74
+[    1.670650] cam_vfe acdb200.qcom,ife-lite1: Linked as a consumer to regulator.74
+[    1.673462] cam-cci-driver ac4f000.qcom,cci: Linked as a consumer to regulator.74
+[    1.675449] cam-cci-driver ac50000.qcom,cci: Linked as a consumer to regulator.74
+[    1.676811] cam-csiphy-driver ac6a000.qcom,csiphy: Linked as a consumer to regulator.74
+[    1.676830] cam-csiphy-driver ac6a000.qcom,csiphy: Linked as a consumer to regulator.53
+[    1.676935] cam-csiphy-driver ac6c000.qcom,csiphy: Linked as a consumer to regulator.74
+[    1.676951] cam-csiphy-driver ac6c000.qcom,csiphy: Linked as a consumer to regulator.53
+[    1.677055] cam-csiphy-driver ac6e000.qcom,csiphy: Linked as a consumer to regulator.74
+[    1.677070] cam-csiphy-driver ac6e000.qcom,csiphy: Linked as a consumer to regulator.53
+[    1.677175] cam-csiphy-driver ac70000.qcom,csiphy: Linked as a consumer to regulator.74
+[    1.677190] cam-csiphy-driver ac70000.qcom,csiphy: Linked as a consumer to regulator.53
+[    1.677290] cam-csiphy-driver ac72000.qcom,csiphy: Linked as a consumer to regulator.74
+[    1.677305] cam-csiphy-driver ac72000.qcom,csiphy: Linked as a consumer to regulator.53
+[    1.677408] cam-csiphy-driver ac74000.qcom,csiphy: Linked as a consumer to regulator.74
+[    1.677422] cam-csiphy-driver ac74000.qcom,csiphy: Linked as a consumer to regulator.53
+[    1.682086] cam-a5 ac00000.qcom,a5: Linked as a consumer to regulator.74
+[    1.682487] cam-ipe ac9a000.qcom,ipe0: Linked as a consumer to regulator.72
+[    1.682879] cam-bps ac7a000.qcom,bps: Linked as a consumer to regulator.69
+[    1.685428] cam-jpeg-enc ac53000.qcom,jpegenc: Linked as a consumer to regulator.74
+[    1.685819] cam-jpeg-dma ac57000.qcom,jpegdma: Linked as a consumer to regulator.74
+[    1.687058] cam_fd_hw ac5f000.qcom,fd: Linked as a consumer to regulator.74
+[    1.690408] rmnet_perf_init(): initializing rmnet_perf
+[    1.690413] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = lo
+[    1.690417] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = bond0
+[    1.690420] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = dummy0
+[    1.690424] rmnet_shs_module_init(): Starting rmnet SHS module
+[    1.690940] register_client_adhoc:find path.src 1 dest 590
+[    1.691195] register_client_adhoc:Client handle 56 disp_rsc_reg
+[    1.691220] register_client_adhoc:find path.src 20003 dest 20513
+[    1.691415] register_client_adhoc:find path.src 20004 dest 20513
+[    1.691576] register_client_adhoc:Client handle 57 disp_rsc_mnoc_llcc
+[    1.691602] register_client_adhoc:find path.src 20000 dest 20512
+[    1.691681] register_client_adhoc:Client handle 58 disp_rsc_ebi
+[    1.691713] sde_rsc af20000.qcom,sde_rscc: Linked as a consumer to regulator.75
+[    1.691824] [sde_rsc_hw:rsc_hw_init_v3:537]: sde rsc init successfully done
+[    1.691895] [sde_rsc:sde_rsc_probe:1594]: sde rsc index:0 probed successfully
+[    1.692437] dsi_phy ae94400.qcom,mdss_dsi_phy0: ae94400.qcom,mdss_dsi_phy0 supply gdsc not found, using dummy regulator
+[    1.692453] dsi_phy ae94400.qcom,mdss_dsi_phy0: Linked as a consumer to regulator.0
+[    1.692469] dsi_phy ae94400.qcom,mdss_dsi_phy0: Linked as a consumer to regulator.16
+[    1.692487] [drm:dsi_phy_driver_probe] [msm-dsi-info]: DSI_0: Probe successful
+[    1.692548] dsi_phy ae96400.qcom,mdss_dsi_phy1: ae96400.qcom,mdss_dsi_phy1 supply gdsc not found, using dummy regulator
+[    1.692557] dsi_phy ae96400.qcom,mdss_dsi_phy1: Linked as a consumer to regulator.0
+[    1.692568] dsi_phy ae96400.qcom,mdss_dsi_phy1: Linked as a consumer to regulator.16
+[    1.692576] [drm:dsi_phy_driver_probe] [msm-dsi-info]: DSI_1: Probe successful
+[    1.693333] drm_dsi_ctrl ae94000.qcom,mdss_dsi_ctrl0: Linked as a consumer to regulator.53
+[    1.693349] drm_dsi_ctrl ae94000.qcom,mdss_dsi_ctrl0: Linked as a consumer to regulator.21
+[    1.693354] AXI: get_pdata(): Error: Client name not found
+[    1.693356] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    1.693369] [drm:dsi_ctrl_dev_probe] [msm-dsi-info]: dsi-ctrl-0: Probe successful
+[    1.693458] drm_dsi_ctrl ae96000.qcom,mdss_dsi_ctrl1: Linked as a consumer to regulator.53
+[    1.693470] drm_dsi_ctrl ae96000.qcom,mdss_dsi_ctrl1: Linked as a consumer to regulator.21
+[    1.693472] AXI: get_pdata(): Error: Client name not found
+[    1.693474] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    1.693478] [drm:dsi_ctrl_dev_probe] [msm-dsi-info]: dsi-ctrl-1: Probe successful
+[    1.694265] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    1.694275] [drm:dsi_panel_get] *ERROR* [4074]: Dsi panel name is DSI_PANEL_SAMSUNG_AMB655XL
+[    1.694435] [drm:dsi_panel_parse_bl_config] *ERROR* [2988]: default backlight bl_def_val= 360
+[    1.694545] [drm:dsi_panel_parse_dms_info] *ERROR* [3669]: [samsung amb655x fhd cmd mode dsc dsi panel] unsupported dynamic switch mode: dynamic-switch-immediate
+[    1.694571] enter drm_panel_add, name is qcom,mdss_dsi_samsung_amb655x_dsc_cmd
+[    1.694664] [drm:dsi_display_init] *ERROR* [4238]: dsi_display_clocks_init 20828
+[    1.694672] [drm:dsi_display_init] *ERROR* [4864]: INIT_DELAYED_WORK: dsi_display_gamma_read_work
+[    1.694949] [drm] [msm-dsi-warn]: panel_node  not found
+[    1.696437] msm_vidc:   err : ffffffff: .....: Failed to create debugfs for msm_vidc
+[    1.696906] msm_vidc:   err : ffffffff: .....: no device Registered
+[    1.697115] msm_vidc:   err : ffffffff: .....: Failed to create debugfs for msm_vidc
+[    1.698001] msm_vidc_v4l2 aa00000.qcom,vidc:non_secure_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.698160] iommu: Adding device aa00000.qcom,vidc:non_secure_cb to group 28
+[    1.698548] msm_vidc_v4l2 aa00000.qcom,vidc:secure_non_pixel_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.699021] iommu: Adding device aa00000.qcom,vidc:secure_non_pixel_cb to group 29
+[    1.699418] msm_vidc_v4l2 aa00000.qcom,vidc:secure_bitstream_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.699793] iommu: Adding device aa00000.qcom,vidc:secure_bitstream_cb to group 30
+[    1.700210] msm_vidc_v4l2 aa00000.qcom,vidc:secure_pixel_cb: Linked as a consumer to 15000000.apps-smmu
+[    1.700562] iommu: Adding device aa00000.qcom,vidc:secure_pixel_cb to group 31
+[    1.701040] GACT probability NOT on
+[    1.701050] Mirror/redirect action on
+[    1.701058] netem: version 1.3
+[    1.701059] u32 classifier
+[    1.701060]     Actions configured
+[    1.701597] xt_time: kernel timezone is -0000
+[    1.701651] gre: GRE over IPv4 demultiplexor driver
+[    1.701652] IPv4 over IPsec tunneling driver
+[    1.701832] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = ip_vti0
+[    1.702074] Initializing XFRM netlink socket
+[    1.702083] IPsec XFRM device driver
+[    1.702325] NET: Registered protocol family 10
+[    1.702890] Segment Routing with IPv6
+[    1.702933] mip6: Mobile IPv6
+[    1.703151] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = ip6_vti0
+[    1.703242] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.703372] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = sit0
+[    1.703590] rmnet_perf_config_notify_cb(): rmnet_perf netdevice register, name = ip6tnl0
+[    1.703674] NET: Registered protocol family 17
+[    1.703685] NET: Registered protocol family 15
+[    1.703733] l2tp_core: L2TP core driver, V2.0
+[    1.703739] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.703741] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[    1.703750] l2tp_netlink: L2TP netlink interface
+[    1.703764] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[    1.703765] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[    1.703792] sctp: Hash tables configured (bind 256/256)
+[    1.704203] NPU_WARN: npu_bridge_mbox_work: 1180 NPU fw is not loaded
+[    1.704348] minidump-id not found for npu
+[    1.704391] subsys-pil-tz 9800000.qcom,npu: for npu segments only will be dumped.
+[    1.704438] subsys-pil-tz 9800000.qcom,npu: for md_npu segments only will be dumped.
+[    1.704943] platform 3d6a000.qcom,gmu: Linked as a consumer to regulator.64
+[    1.704964] platform 3d6a000.qcom,gmu: Linked as a consumer to regulator.65
+[    1.705495] platform 3d6a000.qcom,gmu:gmu_user: Linked as a consumer to 3da0000.kgsl-smmu
+[    1.705531] iommu: Adding device 3d6a000.qcom,gmu:gmu_user to group 32
+[    1.706132] platform 3d6a000.qcom,gmu:gmu_kernel: Linked as a consumer to 3da0000.kgsl-smmu
+[    1.706164] iommu: Adding device 3d6a000.qcom,gmu:gmu_kernel to group 33
+[    1.706729] register_client_adhoc:find path.src 26 dest 512
+[    1.706881] register_client_adhoc:Client handle 59 grp3d
+[    1.706902] register_client_adhoc:find path.src 26 dest 10036
+[    1.707051] register_client_adhoc:Client handle 60 cnoc
+[    1.707055] query_client_usecase_all: query_start
+[    1.707109] query_client_usecase_all: query_start
+[    1.707241] kgsl-3d 3d00000.qcom,kgsl-3d0: Linked as a consumer to regulator.64
+[    1.707259] kgsl-3d 3d00000.qcom,kgsl-3d0: Linked as a consumer to regulator.65
+[    1.707910] platform 3da0000.qcom,kgsl-iommu:gfx3d_user: Linked as a consumer to 3da0000.kgsl-smmu
+[    1.707944] iommu: Adding device 3da0000.qcom,kgsl-iommu:gfx3d_user to group 34
+[    1.708249] platform 3da0000.qcom,kgsl-iommu:gfx3d_secure: Linked as a consumer to 3da0000.kgsl-smmu
+[    1.708281] iommu: Adding device 3da0000.qcom,kgsl-iommu:gfx3d_secure to group 35
+[    1.730140] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.32
+[    1.730154] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.21
+[    1.730160] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    1.730167] msm-usb-ssphy-qmp 88e8000.ssphy: Dropping the link to regulator.21
+[    1.730179] msm-usb-ssphy-qmp 88e8000.ssphy: Dropping the link to regulator.32
+[    1.730383] msm-dwc3 a600000.ssusb: Linked as a consumer to regulator.58
+[    1.730529] irq: type mismatch, failed to map hwirq-14 for interrupt-controller@b220000!
+[    1.730603] irq: type mismatch, failed to map hwirq-15 for interrupt-controller@b220000!
+[    1.730979] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    1.731063] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    1.731559] usb_bam_dt_to_data: bam type is missing in device tree
+[    1.731567] usb_bam: probe of a704000.qcom,usbbam failed with error -22
+[    1.731722] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    1.732366] msm-dwc3 a600000.ssusb: Dropping the link to regulator.58
+[    1.732559] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: Linked as a consumer to regulator.13
+[    1.733232] usbpd usbpd0: Could not get USB power_supply, deferring probe
+[    1.733344] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
+[    1.733419] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: Dropping the link to regulator.13
+[    1.733864] SMB2: smb5_parse_dt_misc: T1:120, T2:350, T3:400, fcc1:350, fcc1:350, cut1:200, cut2:200,full:4445
+[    1.733918] SMB2: smb5_parse_dt_misc: sw_iterm_ma=130,check_batt_full_by_sw=1
+[    1.733922] SMB2: smb5_parse_dt_misc: little_cold_iterm_ma=0
+[    1.733929] SMB2: smb5_parse_dt_misc: OTG_ICL:enable:1,CapThr:15,LowThr:1000000,NorThr:1500000
+[    1.733967] SMB2: smb5_parse_dt_misc: T0=-20, T1=0, T2=50, T3=120, T4=160, T5=450, T6=500
+[    1.733969] SMB2: smb5_parse_dt_misc: BATT_TEMP_LITTLE_COLD=500, 3950, 3680
+[    1.733971] SMB2: smb5_parse_dt_misc: BATT_TEMP_COOL=1050, 4435, 4235
+[    1.733973] SMB2: smb5_parse_dt_misc: BATT_TEMP_LITTLE_COOL=1100, 4435, 4335
+[    1.733975] SMB2: smb5_parse_dt_misc: BATT_TEMP_PRE_NORMAL=1100, 4435, 4335
+[    1.733977] SMB2: smb5_parse_dt_misc: BATT_TEMP_NORMAL=1100, 4435, 4335
+[    1.733979] SMB2: smb5_parse_dt_misc: BATT_TEMP_WARM=600, 4130, 4030
+[    1.733980] SMB2: smb5_parse_dt_misc: cutoff_volt_with_charger=3250, disable-pd=0
+[    1.733983] SMB2: smb5_parse_dt_misc: fv_offset_voltage_mv=50
+[    1.733987] SMB2: smb5_parse_dt_misc: normal_check_interval_period=300
+[    1.733990] SMB2: smb5_parse_dt_misc: fast_check_interval_period=50
+[    1.733994] SMB2: smb5_parse_dt_misc: fast_check_threshold_temp=33
+[    1.733997] SMB2: smb5_parse_dt_misc: high_temp_short_check_timeout=1500
+[    1.734000] SMB2: smb5_parse_dt_misc: first_protect_connecter_temp=60
+[    1.734004] SMB2: smb5_parse_dt_misc: second_protect_connecter_temp=45
+[    1.734008] SMB2: smb5_parse_dt_misc: second_protect_interval_temp=14
+[    1.734011] SMB2: smb5_parse_dt_misc: third_protect_rise_rate=3
+[    1.734014] SMB2: smb5_parse_dt_misc: third_protect_loop_temp=40
+[    1.734017] SMB2: smb5_parse_dt_misc: third_protect_interval_temp=8
+[    1.734021] SMB2: smb5_parse_dt_misc: third_protect_base_temp=20
+[    1.734026] SMB2: smb5_parse_dt_misc: skin_thermal_high_threshold=39
+[    1.734030] SMB2: smb5_parse_dt_misc: skin_thermal_pre_high_threshold=38
+[    1.734034] SMB2: smb5_parse_dt_misc: skin_thermal_warm_threshold=37
+[    1.734039] SMB2: smb5_parse_dt_misc: skin_thermal_pre_warm_threshold=36
+[    1.734044] SMB2: smb5_parse_dt_misc: skin_thermal_medium_threshold=34
+[    1.734048] SMB2: smb5_parse_dt_misc: skin_thermal_normal_threshold=33
+[    1.734053] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_high_threshold=41
+[    1.734058] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_pre_high_threshold=39
+[    1.734064] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_medium_threshold=38
+[    1.734067] SMB2: smb5_parse_dt_misc: skin_thermal_lcdoff_normal_threshold=36
+[    1.734072] SMB2: smb5_parse_dt_misc: enable_dash_current_adjust=1
+[    1.734078] SMB2: smb5_parse_dt_misc: nor_skin_thermal_high_threshold=39
+[    1.734083] SMB2: smb5_parse_dt_misc: nor_skin_thermal_pre_high_threshold=38
+[    1.734088] SMB2: smb5_parse_dt_misc: nor_skin_thermal_warm_threshold=37
+[    1.734092] SMB2: smb5_parse_dt_misc: nor_skin_thermal_pre_warm_threshold=36
+[    1.734097] SMB2: smb5_parse_dt_misc: nor_skin_thermal_medium_threshold=34
+[    1.734101] SMB2: smb5_parse_dt_misc: nor_skin_thermal_normal_threshold=33
+[    1.734106] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_high_threshold=45
+[    1.734110] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_pre_high_threshold=44
+[    1.734116] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_warm_threshold=44
+[    1.734122] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_pre_warm_threshold=42
+[    1.734127] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_medium_threshold=42
+[    1.734133] SMB2: smb5_parse_dt_misc: nor_skin_thermal_lcdoff_normal_threshold=41
+[    1.734138] SMB2: smb5_parse_dt_misc: nor_call_on_current_ma=500
+[    1.734144] SMB2: smb5_parse_dt_misc: nor_skin_thermal_hi_current_ma=500
+[    1.734150] SMB2: smb5_parse_dt_misc: nor_skin_thermal_wrm_current_ma=800
+[    1.734156] SMB2: smb5_parse_dt_misc: nor_skin_thermal_med_current_ma=1000
+[    1.734160] SMB2: smb5_parse_dt_misc: enable_nor_current_adjust=1
+[    1.734164] SMB2: smb5_parse_dt_misc: op,slowy-charge-check=0
+[    1.734167] SMB2: smb5_parse_dt_misc: full_count_sw_num=2
+[    1.734806] SMBLIB: op_set_collapse_fet: USBIN_5V_AICL_THRESHOLD_CFG_REG(0x1381)=0x3
+[    1.734837] SMBLIB: op_set_collapse_fet: USBIN_CONT_AICL_THRESHOLD_CFG_REG(0x1384)=0x3
+[    1.734869] SMBLIB: op_set_collapse_fet: USBIN_AICL_OPTIONS_CFG_REG(0x1380)=0xc3
+[    1.734900] SMBLIB: op_set_collapse_fet: USBIN_LOAD_CFG_REG(0x1365)=0xb7
+[    1.734904] SMBLIB: smblib_init: chg_termination_alarm
+[    1.734908] QCOM-BATT: qcom_batt_create_debugfs: Couldn't create battery debugfs rc=-19
+[    1.735005] SMBLIB: op_battery_temp_region_set: set temp_region=5
+[    1.735042] register_client_adhoc:find path.src 1 dest 731
+[    1.735289] register_client_adhoc:Client handle 61 dash_clk_vote
+[    1.735346] SMB2: smb5_init_hw: vbat_max=0, ibat_max=0, iusb_max=1800000
+[    1.735482] SMB2: smb5_configure_typec: TYPE_C_INTERRUPT_EN_CFG_1_REG:0x155e=0x08
+[    1.735635] SMBLIB: smblib_set_dc_suspend: 0
+[    1.735774] SMBLIB: smblib_chg_disable_vote_callback: set chg_disable=0
+[    1.735777] SMBLIB: op_charging_en: enable=1
+[    1.735915] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8150@0:pinctrl@c000: pin_config_group_set op failed for group 1
+[    1.735921] mp2650-charger 7-005c: Error applying setting, reverse things back
+[    1.735937] [SWARPCHG][mp2650_set_mps_otg_en_val]<~WPC~>set value:0, gpio_val:0
+[    1.737411] [SWARPCHG][mp2650_enable_charging]mp2650 enable charging.
+[    1.738619] qcom,qpnp-smb5 c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5: Linked as a consumer to regulator.81
+[    1.738634] SMBLIB: smblib_get_apsd_result: APSD_DTC_STATUS_DONE_BIT is 0
+[    1.738639] SMBLIB: smblib_update_usb_type: pm8150b_charger: smblib_update_usb_type: APSD=UNKNOWN PD=0 dash_on=0 real_charger_type=0
+[    1.738847] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.738979] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.739054] SMBLIB: smblib_usb_plugin_locked: IRQ: detached
+[    1.739898] [SWARPCHG][mp2650_charging_current_write_fast]set charge current = 0
+[    1.739946] of_batterydata_get_best_profile: OP_4500mAh found
+[    1.739975] SMBLIB: jeita_update_work: pm8150b_charger: jeita_update_work: Couldn't get fcc values for soft JEITA rc=-22
+[    1.740455] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.740701] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.740759] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.740762] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.741046] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[    1.742510] [SWARPCHG][mp2650_charging_current_write_fast]set charge current = 3000
+[    1.742951] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.743152] [SWARPCHG][mp2650_get_ibus_current]cur_high = 0x0, cur_low = 0x0, ibus_curr[0]
+[    1.744121] SMBLIB: smblib_set_icl_current: icl_ua=100000
+[    1.744124] SMBLIB: smblib_set_icl_current: pm8150b_charger: smblib_set_icl_current: icl_ua=100000, connector_type=0, real_charger_type=0
+[    1.744146] SMBLIB: smblib_get_prop_typec_mode: typec mode is 0
+[    1.744150] [SWARPCHG][mp2650_input_current_limit_without_aicl] reg_val current [2]-100ma
+[    1.746411] SMBLIB: smblib_set_usb_suspend: suspend=0
+[    1.747011] [SWARPCHG][mp2650_enable_suspend_charger] rc = 0
+[    1.747065] SMBLIB: typec_state_change_irq_handler: pm8150b_charger: typec_state_change_irq_handler: Couldn't find wireless psy
+[    1.747086] SMBLIB: smblib_get_prop_typec_mode: typec mode is 0
+[    1.747089] SMBLIB: typec_state_change_irq_handler: pm8150b_charger: typec_state_change_irq_handler: IRQ: cc-state-change; Type-C NONE detected
+[    1.747102] SMBLIB: usb_source_change_irq_handler: APSD_STATUS=0x00
+[    1.747264] SMBLIB: smblib_get_apsd_result: APSD_DTC_STATUS_DONE_BIT is 0
+[    1.747473] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.747537] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[    1.748393] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.748542] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.748740] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.748786] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[    1.748862] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.751797] [SWARPCHG][mp2650_get_ibus_current]cur_high = 0x0, cur_low = 0x0, ibus_curr[0]
+[    1.751816] SMBLIB: smblib_get_apsd_result: APSD_DTC_STATUS_DONE_BIT is 0
+[    1.752398] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.757379] SMBLIB: smblib_set_icl_current: icl_ua=100000
+[    1.757382] SMBLIB: smblib_set_icl_current: pm8150b_charger: smblib_set_icl_current: icl_ua=100000, connector_type=0, real_charger_type=0
+[    1.757403] SMBLIB: smblib_get_prop_typec_mode: typec mode is 0
+[    1.757406] [SWARPCHG][mp2650_input_current_limit_without_aicl] reg_val current [2]-100ma
+[    1.758378] SMBLIB: smblib_set_usb_suspend: suspend=0
+[    1.758863] [SWARPCHG][mp2650_enable_suspend_charger] rc = 0
+[    1.758899] SMBLIB: smblib_get_prop_typec_mode: typec mode is 0
+[    1.758968] SMB2: smb5_show_charger_status: SMB5 status - usb:present=0 type=0 batt:present = 1 health = 1 charge = 1
+[    1.759049] SMB2: op_ship_mode_gpio_request: ship_mode_gpio_request default mode success!
+[    1.759364] SMB2: request_plug_irq: request usb_plug irq success
+[    1.759367] SMB2: smb5_probe: QPNP SMB5 probed successfully
+[    1.760380] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.760391] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.760475] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[    1.761793] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.761831] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.761889] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[    1.762045] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.764021] [SWARPCHG][mp2650_get_ibus_current]cur_high = 0x0, cur_low = 0x0, ibus_curr[0]
+[    1.764040] SMBLIB: smblib_get_apsd_result: APSD_DTC_STATUS_DONE_BIT is 0
+[    1.764683] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    1.775222] tmc_etr_bam_init: setting SPS_BAM_SMMU_EN flag with (6048000.tmc)
+[    1.775287] sps:BAM 0x0000000006064000 is registered.
+[    1.775712] coresight-stm 6002000.stm: STM32 initialized
+[    1.776185] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.32
+[    1.776200] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.21
+[    1.776206] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    1.776211] msm-usb-ssphy-qmp 88e8000.ssphy: Dropping the link to regulator.21
+[    1.776219] msm-usb-ssphy-qmp 88e8000.ssphy: Dropping the link to regulator.32
+[    1.776412] msm-dwc3 a600000.ssusb: Linked as a consumer to regulator.58
+[    1.776558] irq: type mismatch, failed to map hwirq-14 for interrupt-controller@b220000!
+[    1.776626] irq: type mismatch, failed to map hwirq-15 for interrupt-controller@b220000!
+[    1.776961] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    1.777026] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    1.777476] usb_bam_dt_to_data: bam type is missing in device tree
+[    1.777484] usb_bam: probe of a704000.qcom,usbbam failed with error -22
+[    1.777634] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    1.778198] msm-dwc3 a600000.ssusb: Dropping the link to regulator.58
+[    1.778378] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: Linked as a consumer to regulator.13
+[    1.780807] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.32
+[    1.780818] msm-usb-ssphy-qmp 88e8000.ssphy: Linked as a consumer to regulator.21
+[    1.780825] msm-usb-ssphy-qmp 88e8000.ssphy: No separate ID extcon device
+[    1.780941] msm-dwc3 a600000.ssusb: Linked as a consumer to regulator.58
+[    1.781059] irq: type mismatch, failed to map hwirq-14 for interrupt-controller@b220000!
+[    1.781125] irq: type mismatch, failed to map hwirq-15 for interrupt-controller@b220000!
+[    1.781447] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    1.781506] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    1.781939] usb_bam_dt_to_data: bam type is missing in device tree
+[    1.781946] usb_bam: probe of a704000.qcom,usbbam failed with error -22
+[    1.782123] register_client_adhoc:find path.src 61 dest 512
+[    1.782463] register_client_adhoc:find path.src 61 dest 676
+[    1.782825] register_client_adhoc:find path.src 1 dest 583
+[    1.783049] register_client_adhoc:Client handle 62 usb0
+[    1.783131] msm-dwc3 a600000.ssusb: Linked as a consumer to regulator.81
+[    1.783939] sec-s6sy761: probe of 4-0048 failed with error -1
+[    1.783985] [TP]syna-tcm: syna_tcm_module_init is called
+[    1.784095] [TP]syna-tcm: syna_tcm_probe: enter
+[    1.784106] [TP]syna-tcm: syna_tcm_probe read_length:9
+[    1.784170] [TP]syna-tcm: max-num support is 10
+[    1.784442] syna-tcm 4-004b: Linked as a consumer to regulator.40
+[    1.784502] syna-tcm 4-004b: Linked as a consumer to regulator.27
+[    1.785404] USB2_tune1_register_val:0xb0b0b0b
+[    1.785545] input: touchpanel as /devices/virtual/input/input4
+[    1.785642] input: touchpanel_kpd as /devices/virtual/input/input5
+[    1.785726] input: touchpanel_ps as /devices/virtual/input/input6
+[    1.785873] [TP]syna-tcm: chip_info->tp_type = 7, panel_data->fw_name = tp/FW_19805_S3908.img
+[    1.785876] [TP]syna-tcm: syna_get_chip_info: Enter
+[    1.785887] [TP]syna-tcm: Set the reset_gpio 
+[    1.800040] [TP]syna-tcm: Set the reset_gpio 
+[    1.838632] [TP]syna-tcm: Received identify report (firmware mode = 0x01)
+[    1.840182] msm-dwc3 a600000.ssusb: DWC3 exited from low power mode
+[    1.840784] msm-dwc3 a600000.ssusb: DWC3 in low power mode
+[    1.890029] [TP]syna-tcm: syna_tcm_write_message:Command = 0x20 chunk = 1
+[    1.897216] [TP]syna-tcm: Firmware mode = 0x01, boot status 0x00, app status 0x00
+[    1.897219] [TP]syna-tcm: syna_tcm_write_message:Command = 0x25 chunk = 1
+[    1.900895] [TP]syna-tcm: fw id 0, custom config id 0xEE01301B        7\x04_	
+
+[    1.900899] [TP]syna-tcm: syna_tcm_write_message:Command = 0x23 chunk = 1
+[    1.907323] [TP]syna-tcm: syna_tcm_write_message:Command = 0x26 chunk = 1
+[    1.912764] [TP]syna-tcm: syna_tcm_write_message:Command = 0x25 chunk = 1
+[    1.916443] [TP]syna-tcm: syna_tcm_write_message:Command = 0x24 chunk = 1
+[    1.920797] core_ctl: Creating CPU group 0
+[    1.920800] core_ctl: Init CPU0 state
+[    1.920801] core_ctl: Init CPU1 state
+[    1.920803] core_ctl: Init CPU2 state
+[    1.920804] core_ctl: Init CPU3 state
+[    1.920906] core_ctl: Creating CPU group 4
+[    1.920908] core_ctl: Init CPU4 state
+[    1.920909] core_ctl: Init CPU5 state
+[    1.920910] core_ctl: Init CPU6 state
+[    1.920983] core_ctl: Creating CPU group 7
+[    1.920985] core_ctl: Init CPU7 state
+[    1.921199] registered taskstats version 1
+[    1.921201] Loading compiled-in X.509 certificates
+[    1.923008] Loaded X.509 cert 'Build time autogenerated kernel key: 1640440ce47fa2c982198ce7bc04fa34cb6919c2'
+[    1.923188] Key type ._fscrypt registered
+[    1.923190] Key type .fscrypt registered
+[    1.923191] Key type fscrypt-provisioning registered
+[    1.923345] pstore: Using compression: deflate
+[    1.923645] spss_utils [spss_parse_dt]: iar_buf_addr [0x923f0000].
+[    1.923718] spss_utils [spss_probe]: Initialization completed ok, firmware_name [spss2p].
+[    1.925225] Error: swapper/0: fastrpc_device_init: failed to create debugfs root dir
+[    1.925733] fastrpc soc:qcom,msm-adsprpc-mem: for adsp_rh segments only will be dumped.
+[    1.925810] adsprpc: init_secure_vmid_list: secure VMID = 22
+[    1.925812] adsprpc: init_secure_vmid_list: secure VMID = 37
+[    1.925826] adsprpc: fastrpc_probe: service location enabled for avs/audio (audio_pdr_adsprpc)
+[    1.925830] adsprpc: fastrpc_probe: service location enabled for tms/servreg (sensors_pdr_adsprpc)
+[    1.926092] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1: Linked as a consumer to 15000000.apps-smmu
+[    1.926260] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1 to group 36
+[    1.926629] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2: Linked as a consumer to 15000000.apps-smmu
+[    1.926767] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2 to group 37
+[    1.927134] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3: Linked as a consumer to 15000000.apps-smmu
+[    1.927277] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3 to group 38
+[    1.927651] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4: Linked as a consumer to 15000000.apps-smmu
+[    1.927809] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4 to group 39
+[    1.928181] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5: Linked as a consumer to 15000000.apps-smmu
+[    1.928325] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5 to group 40
+[    1.928699] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb6: Linked as a consumer to 15000000.apps-smmu
+[    1.928839] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb6 to group 41
+[    1.929217] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb7: Linked as a consumer to 15000000.apps-smmu
+[    1.929357] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb7 to group 42
+[    1.929738] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb8: Linked as a consumer to 15000000.apps-smmu
+[    1.929876] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb8 to group 43
+[    1.930328] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb9: Linked as a consumer to 15000000.apps-smmu
+[    1.930790] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb9 to group 44
+[    1.931185] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb10: Linked as a consumer to 15000000.apps-smmu
+[    1.931331] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb10 to group 45
+[    1.931720] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb11: Linked as a consumer to 15000000.apps-smmu
+[    1.931878] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb11 to group 46
+[    1.932263] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb12: Linked as a consumer to 15000000.apps-smmu
+[    1.932408] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb12 to group 47
+[    1.932779] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb13: Linked as a consumer to 15000000.apps-smmu
+[    1.932925] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb13 to group 48
+[    1.933300] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb14: Linked as a consumer to 15000000.apps-smmu
+[    1.933441] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb14 to group 49
+[    1.933819] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb15: Linked as a consumer to 15000000.apps-smmu
+[    1.933961] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb15 to group 50
+[    1.934753] adsprpc: fastrpc_device_init: SSR notifier registered for adsp
+[    1.934760] adsprpc: fastrpc_device_init: SSR notifier registered for modem
+[    1.934764] adsprpc: fastrpc_device_init: SSR notifier registered for slpi
+[    1.934766] adsprpc: fastrpc_device_init: SSR notifier registered for cdsp
+[    1.935600] ngd_msm_ctrl 3ac0000.slim: Linked as a consumer to 15000000.apps-smmu
+[    1.935769] iommu: Adding device 3ac0000.slim to group 51
+[    1.937667] input: gpio-keys as /devices/platform/soc/soc:gpio_keys/input/input7
+[    1.938976] lpm_levels: Cluster (L3) stats not registered
+[    1.943737] rmnet_ipa3 started initialization
+[    1.944370] RNDIS_IPA module is loaded.
+[    1.944372] gf_spi: gf_init:fp version 9678
+[    1.945268] goodix_fp soc:goodix_fp: Linked as a consumer to regulator.30
+[    1.945693] ---- power on ok ----
+[    1.945753] input: gf_input as /devices/virtual/input/input8
+[    1.945790] gf_spi: register notifier drm panel success!
+[    1.945794] gf_spi: version V1.2.08
+[    1.945946] gf_spi: status = 0x0
+[    1.945949] [tri_state_key]  tri_key_platform_init : call : tri_key_platform_init
+[    1.946123] [tri_state_key]  tri_key_platform_probe : call tri_key_platform_probe
+[    1.946126] [tri_state_key]  tri_key_platform_probe : project_info is 1
+[    1.947230] [tri_state_key]  tri_key_platform_probe : tri_key:data1 is -82, data0 is -78
+[    1.947233] ======> m1120_update_threshold
+[    1.947235] [tri_state_key]  m1120_update_threshold : m1120_up ,low:-104, high:-60  
+[    1.947361] up hall m1120_update_threshold, lowthd=-104, highthd=-60.
+[    1.947860] [tri_state_key]  reupdata_threshold : tri_key:updata_threshold up:low:-104,high:-60
+[    1.947863] ======> m1120_clear_irq
+[    1.947988]   m1120_update_threshold
+[    1.947991] [tri_state_key]  m1120_update_threshold : m1120_down ,low:-100, high:-56  
+[    1.948119] dn hall m1120_update_threshold, lowthd=-100, highthd=-56.
+[    1.948615] [tri_state_key]  reupdata_threshold : tri_key:updata_threshold down:low:-100,high:-56
+[    1.948617]   m1120_clear_irq
+[    1.948742] [tri_state_key]  reupdata_threshold : tri_key:last_d0 is -78 ,last_d1 is -82
+[    1.948744]   m1120_clear_irq
+[    1.948868] ======> m1120_clear_irq
+[    1.949001] [TP]syna-tcm: syna_tcm_write_message:Command = 0x24 chunk = 1
+[    1.970030] [TP]syna-tcm: syna_tcm_write_message:Command = 0x05 chunk = 1
+[    2.002543] [TP]syna-tcm: syna_tcm_write_message:Command = 0x06 chunk = 1
+[    2.067117] [TP]syna-tcm: syna_tcm_write_message:Command = 0x24 chunk = 1
+[    2.067731] [tri_state_key]  report_key_value : tri_key: report mid key successful!
+[    2.067734]   m1120_set_detection_mode_1
+[    2.067736] [tri_state_key]  m1120_set_detection_mode_1 : m1120 down detection mode : INTERRUPT
+[    2.068029] [tri_state_key]  m1120_set_detection_mode_1 : m1120 down enter irq handler 
+[    2.068061] [tri_state_key]  tri_key_platform_probe : tri_key:set 0 detection mode
+[    2.068063] ======> m1120_set_detection_mode_1
+[    2.068065] [tri_state_key]  m1120_set_detection_mode_1 : m1120 up detection mode : INTERRUPT
+[    2.068356] [tri_state_key]  m1120_set_detection_mode_1 : m1120 down enter irq handler
+[    2.068382] [tri_state_key]  tri_key_platform_probe : tri_key:set 1 detection mode
+[    2.068385] [tri_state_key]  tri_key_platform_probe : tri_key_platform_probe probe success.
+[    2.068596] project_info_init_sysfs success
+[    2.068893] op_aboard soc:oem_aboard_check: oem,aboard-gpio-0 gpio: 1126
+[    2.068901] op_aboard soc:oem_aboard_check: failed to get 'oem,aboard-gpio-1'
+[    2.068903] oem_aboard_probe: oem,aboard-gpio-1 fail
+[    2.068961] op_aboard_read_gpio: Aboard_gpio(0 NOQET)
+[    2.068969] oem_aboard_probe: probe finish!
+[    2.069108] stmvl53l1_late_init: Enter,rc=0
+[    2.069112] stmvl53l1_init_cci: enter
+[    2.069398] stmvl53l1_late_init: End 0
+[    2.071796] msm_drm ae00000.qcom,mdss_mdp: Linked as a consumer to regulator.34
+[    2.071914] register_client_adhoc:find path.src 1 dest 590
+[    2.072226] register_client_adhoc:Client handle 63 mdss_reg
+[    2.072250] register_client_adhoc:find path.src 22 dest 512
+[    2.072481] register_client_adhoc:find path.src 23 dest 512
+[    2.072686] register_client_adhoc:Client handle 64 mdss_sde
+[    2.072791] [drm:sde_dbg_init:4760] evtlog_status: enable:11, panic:1, dump:2
+[    2.072806] msm_drm ae00000.qcom,mdss_mdp: bound ae90000.qcom,dp_display (ops dp_display_comp_ops)
+[    2.072812] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,wb-display@0 (ops sde_wb_comp_ops)
+[    2.072845] msm-dsi-display soc:qcom,dsi-display-primary: Linked as a consumer to regulator.28
+[    2.072864] msm-dsi-display soc:qcom,dsi-display-primary: Linked as a consumer to regulator.41
+[    2.072884] msm-dsi-display soc:qcom,dsi-display-primary: Linked as a consumer to regulator.50
+[    2.073017] [drm:dsi_display_bind] [msm-dsi-info]: Successfully bind display panel 'qcom,mdss_dsi_samsung_amb655x_dsc_cmd'
+[    2.073095] [drm:dsi_display_register_err_flag_irq] *ERROR* [1149]: Failed to get err-flag-gpio
+[    2.073101] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-primary (ops dsi_display_comp_ops)
+[    2.073106] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-secondary (ops dsi_display_comp_ops)
+[    2.073115] msm_drm ae00000.qcom,mdss_mdp: bound af20000.qcom,sde_rscc (ops sde_rsc_comp_ops)
+[    2.073134] [drm] mapped mdp address space @(____ptrval____)
+[    2.073540] [drm:_sde_kms_hw_init_blocks:3620] sde hardware revision:0x60000000
+[    2.074895] msmdrm_smmu ae00000.qcom,mdss_mdp:qcom,smmu_sde_unsec_cb: Linked as a consumer to 15000000.apps-smmu
+[    2.075041] iommu: Adding device ae00000.qcom,mdss_mdp:qcom,smmu_sde_unsec_cb to group 52
+[    2.075165] [drm] probing device qcom,smmu_sde_unsec
+[    2.075168] [drm] Created domain mdp_ns, secure=0
+[    2.076487] msmdrm_smmu ae00000.qcom,mdss_mdp:qcom,smmu_sde_sec_cb: Linked as a consumer to 15000000.apps-smmu
+[    2.076959] iommu: Adding device ae00000.qcom,mdss_mdp:qcom,smmu_sde_sec_cb to group 53
+[    2.077093] [drm] probing device qcom,smmu_sde_sec
+[    2.077096] [drm] Created domain mdp_s, secure=1
+[    2.078981] [drm:sde_backlight_setup:153] [sde error]props.brightness = 360
+[    2.079227] [drm:dsi_panel_get_mode] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+[    2.079704] [drm:dsi_panel_get_mode] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+[    2.080409] [drm:dp_parser_get_vreg][msm-dp-warn][1   ]no supply entry present: ???
+[    2.080411] [drm:dp_parser_get_vreg][msm-dp-warn][1   ]no supply entry present: ???
+[    2.080414] [drm:dp_parser_get_vreg][msm-dp-warn][1   ]no supply entry present: ???
+[    2.080865] msm-dp-display ae90000.qcom,dp_display: Linked as a consumer to regulator.53
+[    2.080884] msm-dp-display ae90000.qcom,dp_display: Linked as a consumer to regulator.21
+[    2.080910] msm-dp-display ae90000.qcom,dp_display: Linked as a consumer to regulator.32
+[    2.081478] [drm:dp_debug_init][msm-dp-warn][1   ]Not creating debug root dir.
+[    2.081492] usbpd usbpd0: registered handler((____ptrval____)) for SVID 0xff01
+[    2.084591] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    2.084593] [drm] No driver support for vblank timestamp query.
+[    2.084976] [drm] Initialized msm_drm 1.3.0 20130625 for ae00000.qcom,mdss_mdp on minor 0
+[    2.085004] [drm] cont_splash enabled in 1 of 1 display(s)
+[    2.085175] [drm:dsi_ctrl_isr_configure] [msm-dsi-info]: dsi-ctrl-0: IRQ 545 registered
+[    2.088216] msm notifier probed successfully
+[    2.088703] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.089945] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.090506] cam_cc_sleep_clk_src: CXO configuration failed
+[    2.091415] msm_bus_late_init: Remove handoff bw requests
+[    2.092060] regulator_proxy_consumer_remove_all: removing regulator proxy consumer requests
+[    2.092746] ALSA device list:
+[    2.092748]   No soundcards found.
+[    2.092793] Warning: unable to open an initial console.
+[    2.094239] Freeing unused kernel memory: 6144K
+[    2.094336] Run /init as init process
+[    2.312433] random: python3: uninitialized urandom read (24 bytes read)
+[    2.560068] FASTCHG: opchg_mcu_action: mcu action 3
+[    2.575787] BQ: bq27541_hw_config: DEVICE_BQ27541
+[    2.575790] BQ: bq27541_hw_config: DEVICE_TYPE is 0xFFA5, FIRMWARE_VERSION is 0xFFA5
+[    2.575792] BQ: bq27541_hw_config: Complete bq27541 configuration 0x620B
+[    2.640060] aw8697_ram_work_routine enter
+[    2.640063] aw8697_ram_update:aw8697->haptic_real_f0:170
+[    2.640065] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[    2.640115] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[    2.800361] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[    3.004033] 
+               
+               
+               
+                 __                _                     _     
+                / _|_ __ ___  __ _| |__   ___ _ __   ___| |__  
+               | |_| '__/ _ \/ _` | '_ \ / _ \ '_ \ / __| '_ \ 
+               |  _| | |  __/ (_| | |_) |  __/ | | | (__| | | |
+               |_| |_|  \___|\__, |_.__/ \___|_| |_|\___|_| |_|
+                                |_|                            
+               
+                          CPU benchmark • by kdrag0n
+               
+               ------------------------------------------------
+               
+               Frequency domains: 
+[    3.004182] cpu1 
+[    3.004239] cpu4 
+[    3.004293] cpu7 
+[    3.004338] 
+               Offline CPUs: 
+[    3.006839] cpu1 
+[    3.031220] CPU1: shutdown
+[    3.031245] psci: CPU1 killed (polled 0 ms)
+[    3.031887] cpu2 
+[    3.061536] CPU2: shutdown
+[    3.061624] psci: CPU2 killed (polled 0 ms)
+[    3.062016] cpu3 
+[    3.091463] CPU3: shutdown
+[    3.091536] psci: CPU3 killed (polled 0 ms)
+[    3.091842] cpu4 
+[    3.123116] CPU4: shutdown
+[    3.124211] psci: CPU4 killed (polled 0 ms)
+[    3.124556] cpu5 
+[    3.151402] CPU5: shutdown
+[    3.151452] psci: CPU5 killed (polled 0 ms)
+[    3.151776] cpu6 
+[    3.181526] CPU6: shutdown
+[    3.181566] psci: CPU6 killed (polled 0 ms)
+[    3.181915] cpu7 
+[    3.216918] CPU7: shutdown
+[    3.216945] psci: CPU7 killed (polled 0 ms)
+
+[    3.221162] BQ: bq27541_battery_soc: bq27541_battery_soc = 90
+[    3.221189] SMBLIB: op_read_backup_flag: op_read_backup_flag end,temp:0x0,rc:0x0
+[    3.221200] BQ: fg_soc_calibrate: soc=90, soc_load=-22
+[    3.221267] SMBLIB: op_write_backup_flag: pm_pon is NULL
+[    3.760443] of_batterydata_get_best_profile: OP_4500mAh found
+[    3.761050] usbpd usbpd0: registered handler((____ptrval____)) for SVID 0x22d9
+[    3.761063] SMBLIB: op_register_pps_work: pps pd registration success
+[    3.761075] SMBLIB: smblib_panel_register_work: Register panel notifer for PD charging.
+[    3.761088] SMBLIB: smblib_panel_register_work: register notifier drm panel success!
+[    5.131527] i2c_geni 888000.i2c: i2c error :-107
+[    5.131901] i2c_geni 888000.i2c: i2c error :-107
+[    5.132270] i2c_geni 888000.i2c: i2c error :-107
+[    5.132633] i2c_geni 888000.i2c: i2c error :-107
+[    5.132995] i2c_geni 888000.i2c: i2c error :-107
+[    5.133019] FASTCHG: op_i2c_dma_read:  Error: 0x0008, 1 byte(s), err-code: -107
+[    5.133031] FASTCHG: is_sy6610: op10 read register 0x08 fail, rc = -107
+[    5.133908] FASTCHG: is_rk826: register 0x52f8: 0x6a, 0x82
+[    5.133917] FASTCHG: is_rk826: register 0x52f8: 0x826a
+[    5.133927] FASTCHG: is_rk826: rk826 detected, register 0x52f8: 0x826a
+[    5.133936] FASTCHG: get_asic_hw_id_by_i2c_work: asic_hw_id=1
+[    5.133944] FASTCHG: opchg_mcu_action: mcu action 2
+[    8.232860] Sampling power every 1000 ms
+               Baseline power usage: 
+[   32.480744] vdd_tof: disabling
+[   32.480757] vdd_hap_boost: disabling
+[   32.486538] pm8008-chip-en: disabling
+[   64.480642] aw8697_ram_loaded enter
+[   64.480654] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[   64.480667] aw8697_ram_loaded:start hrtimer:load_count1
+[   65.520401] aw8697_ram_work_routine enter
+[   65.520415] aw8697_ram_update:aw8697->haptic_real_f0:170
+[   65.520425] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[   65.520753] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[   83.542169] Detected VIPT I-cache on CPU1
+[   83.542272] arch_timer: CPU1: Trapping CNTVCT access
+[   83.542299] CPU1: Booted secondary processor 0x0000000100 [0x51df805e]
+[   84.552018] 485 mW
+               
+               
+               ===== CPU 1 =====
+               Frequencies: 300 403 518 614 691 787 883 979 1075 1171 1248 1344 1420 1516 1612 1708 1804
+               
+                300: 
+[   99.790321] random: crng init done
+[  100.631698] boot log copy done
+[  125.920612] aw8697_ram_loaded enter
+[  125.920624] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  125.920637] aw8697_ram_loaded:start hrtimer:load_count2
+[  126.960363] aw8697_ram_work_routine enter
+[  126.960376] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  126.960385] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  126.960682] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  187.360526] aw8697_ram_loaded enter
+[  187.360536] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  187.360549] aw8697_ram_loaded:start hrtimer:load_count3
+[  188.400362] aw8697_ram_work_routine enter
+[  188.400375] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  188.400385] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  188.400582] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  248.800549] aw8697_ram_loaded enter
+[  248.800560] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  248.800573] aw8697_ram_loaded:start hrtimer:load_count4
+[  249.840360] aw8697_ram_work_routine enter
+[  249.840373] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  249.840382] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  249.840577] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  305.120529] servloc: init_service_locator: init_service_locator: wait for locator service timed out
+[  305.120573] servloc: pd_locator_work: Unable to connect to service locator!, rc = -62
+[  305.120595] audio_notifer_reg_service: service SSR_ADSP is in use
+[  305.121594] servloc: pd_locator_work: Unable to connect to service locator!, rc = -62
+[  305.121611] adsprpc: fastrpc_get_service_location_notify: PDR notifier locator for adsp is down for audio_pdr_adsprpc
+[  305.121683] servloc: pd_locator_work: Unable to connect to service locator!, rc = -62
+[  305.121696] adsprpc: fastrpc_get_service_location_notify: PDR notifier locator for adsp is down for sensors_pdr_adsprpc
+[  305.121736] servloc: pd_locator_work: Unable to connect to service locator!, rc = -62
+[  310.240571] aw8697_ram_loaded enter
+[  310.240581] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  310.240594] aw8697_ram_loaded:start hrtimer:load_count5
+[  311.280467] aw8697_ram_work_routine enter
+[  311.280480] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  311.280489] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  311.280686] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  344.916180]  1114     3.7 C/MHz      9 mW    2.3 J   121.5 I/mJ   251.4 s
+                403: 
+[  371.680458] aw8697_ram_loaded enter
+[  371.680466] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  371.680476] aw8697_ram_loaded:start hrtimer:load_count6
+[  372.720303] aw8697_ram_work_routine enter
+[  372.720312] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  372.720319] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  372.720468] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  433.120437] aw8697_ram_loaded enter
+[  433.120445] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  433.120455] aw8697_ram_loaded:start hrtimer:load_count7
+[  434.160293] aw8697_ram_work_routine enter
+[  434.160302] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  434.160309] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  434.160455] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  494.560441] aw8697_ram_loaded enter
+[  494.560449] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  494.560458] aw8697_ram_loaded:start hrtimer:load_count8
+[  495.600293] aw8697_ram_work_routine enter
+[  495.600302] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  495.600309] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  495.600456] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  540.713049]  1497     3.7 C/MHz     13 mW    2.4 J   115.8 I/mJ   187.0 s
+                518: 
+[  556.000363] aw8697_ram_loaded enter
+[  556.000369] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  556.000377] aw8697_ram_loaded:start hrtimer:load_count9
+[  557.040256] aw8697_ram_work_routine enter
+[  557.040263] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  557.040268] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  557.040389] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  575.849359] BQ: bq27541_battery_soc: bq27541_battery_soc = 89
+[  575.864320] BQ: fg_soc_calibrate: soc:89, soc_calib:89, VOLT:4245, current:117
+[  575.866268] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[  617.440369] aw8697_ram_loaded enter
+[  617.440375] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  617.440383] aw8697_ram_loaded:start hrtimer:load_count10
+[  618.480275] aw8697_ram_work_routine enter
+[  618.480282] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  618.480288] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  618.480406] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  678.880375] aw8697_ram_loaded enter
+[  678.880381] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  678.880389] aw8697_ram_loaded:start hrtimer:load_count11
+[  679.920255] aw8697_ram_work_routine enter
+[  679.920262] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  679.920268] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  679.920384] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  695.293775]  1925     3.7 C/MHz     13 mW    1.8 J   153.3 I/mJ   145.5 s
+                614: 
+[  740.320328] aw8697_ram_loaded enter
+[  740.320333] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  740.320340] aw8697_ram_loaded:start hrtimer:load_count12
+[  741.360223] aw8697_ram_work_routine enter
+[  741.360230] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  741.360234] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  741.360333] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  801.760324] aw8697_ram_loaded enter
+[  801.760329] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  801.760335] aw8697_ram_loaded:start hrtimer:load_count13
+[  802.800231] aw8697_ram_work_routine enter
+[  802.800238] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  802.800242] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  802.800343] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  826.778105]  2281     3.7 C/MHz     16 mW    2.0 J   138.3 I/mJ   122.7 s
+                691: 
+[  863.200304] aw8697_ram_loaded enter
+[  863.200309] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  863.200315] aw8697_ram_loaded:start hrtimer:load_count14
+[  864.240208] aw8697_ram_work_routine enter
+[  864.240214] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  864.240218] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  864.240306] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  924.640290] aw8697_ram_loaded enter
+[  924.640295] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  924.640301] aw8697_ram_loaded:start hrtimer:load_count15
+[  925.680238] aw8697_ram_work_routine enter
+[  925.680243] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  925.680248] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  925.680337] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[  944.205316]  2567     3.7 C/MHz     18 mW    2.0 J   143.0 I/mJ   109.1 s
+                787: 
+[  986.080290] aw8697_ram_loaded enter
+[  986.080294] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[  986.080299] aw8697_ram_loaded:start hrtimer:load_count16
+[  987.120201] aw8697_ram_work_routine enter
+[  987.120206] aw8697_ram_update:aw8697->haptic_real_f0:170
+[  987.120209] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[  987.120288] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[ 1047.520275] aw8697_ram_loaded enter
+[ 1047.520279] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[ 1047.520284] aw8697_ram_loaded:start hrtimer:load_count17
+[ 1048.560256] aw8697_ram_work_routine enter
+[ 1048.560261] aw8697_ram_update:aw8697->haptic_real_f0:170
+[ 1048.560264] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[ 1048.560343] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[ 1048.589737]  2923     3.7 C/MHz     21 mW    2.0 J   136.6 I/mJ    95.8 s
+                883: 
+[ 1108.960259] aw8697_ram_loaded enter
+[ 1108.960262] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[ 1108.960267] aw8697_ram_loaded:start hrtimer:load_count18
+[ 1110.000201] aw8697_ram_work_routine enter
+[ 1110.000205] aw8697_ram_update:aw8697->haptic_real_f0:170
+[ 1110.000209] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[ 1110.000279] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[ 1142.932382]  3280     3.7 C/MHz     25 mW    2.1 J   131.2 I/mJ    85.4 s
+                979: 
+[ 1170.400245] aw8697_ram_loaded enter
+[ 1170.400248] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[ 1170.400253] aw8697_ram_loaded:start hrtimer:load_count19
+[ 1171.440182] aw8697_ram_work_routine enter
+[ 1171.440186] aw8697_ram_update:aw8697->haptic_real_f0:170
+[ 1171.440189] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[ 1171.440253] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[ 1171.688917] BQ: bq27541_battery_soc: bq27541_battery_soc = 88
+[ 1171.702980] BQ: fg_soc_calibrate: soc:88, soc_calib:88, VOLT:4233, current:122
+[ 1171.704886] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[ 1228.239530]  3636     3.7 C/MHz     26 mW    2.0 J   142.1 I/mJ    77.0 s
+               1075: 
+[ 1231.840297] aw8697_ram_loaded enter
+[ 1231.840301] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[ 1231.840305] aw8697_ram_loaded:start hrtimer:load_count20
+[ 1232.880253] aw8697_ram_work_routine enter
+[ 1232.880257] aw8697_ram_update:aw8697->haptic_real_f0:170
+[ 1232.880260] aw8697_ram_update:haptic bin name  aw8697_haptic_170.bin 
+[ 1232.880320] aw8697_haptic 3-005a: Falling back to syfs fallback for: aw8697_haptic_170.bin
+[ 1293.280255] aw8697_ram_loaded enter
+[ 1293.280258] aw8697_ram_loaded: failed to read aw8697_haptic_170.bin
+[ 1306.541744]  3992     3.7 C/MHz     28 mW    1.9 J   144.2 I/mJ    70.1 s
+               1171: 
+[ 1379.821240]  4349     3.7 C/MHz     34 mW    2.2 J   129.8 I/mJ    64.4 s
+               1248: 
+[ 1449.084509]  4634     3.7 C/MHz     35 mW    2.1 J   132.4 I/mJ    60.4 s
+               1344: 
+[ 1513.337005]  4990     3.7 C/MHz     38 mW    2.1 J   132.3 I/mJ    56.1 s
+               1420: 
+[ 1574.593242]  5276     3.7 C/MHz     41 mW    2.2 J   129.6 I/mJ    53.1 s
+               1516: 
+[ 1632.823213]  5632     3.7 C/MHz     45 mW    2.2 J   126.4 I/mJ    49.7 s
+               1612: 
+[ 1688.044329]  5988     3.7 C/MHz     43 mW    2.0 J   138.6 I/mJ    46.8 s
+               1708: 
+[ 1741.265958]  6345     3.7 C/MHz     42 mW    1.8 J   152.1 I/mJ    44.1 s
+               1804: 
+[ 1755.368520] BQ: bq27541_battery_soc: bq27541_battery_soc = 87
+[ 1755.382383] BQ: fg_soc_calibrate: soc:87, soc_calib:87, VOLT:4221, current:127
+[ 1755.384151] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[ 1791.502358] CPU1: shutdown
+[ 1791.502434] psci: CPU1 killed (polled 0 ms)
+[ 1791.506058] Detected PIPT I-cache on CPU4
+[ 1791.506087] arch_timer: CPU4: Trapping CNTVCT access
+[ 1791.506092] CPU4: Booted secondary processor 0x0000000400 [0x411fd0d0]
+[ 1792.515071]  6702     3.7 C/MHz     47 mW    2.0 J   142.7 I/mJ    41.8 s
+               
+               
+               ===== CPU 4 =====
+               Frequencies: 710 825 940 1056 1171 1286 1382 1478 1574 1670 1766 1862 1958 2054 2150 2246 2342 2419
+               
+                710: 
+[ 1847.845260]  6022     8.5 C/MHz     57 mW    2.6 J   106.1 I/mJ    46.5 s
+                825: 
+[ 1896.144896]  7010     8.5 C/MHz     57 mW    2.3 J   122.6 I/mJ    40.0 s
+                940: 
+[ 1939.436649]  7988     8.5 C/MHz     65 mW    2.3 J   123.0 I/mJ    35.1 s
+               1056: 
+[ 1979.702305]  8952     8.5 C/MHz     94 mW    3.0 J   94.8 I/mJ    31.3 s
+               1171: 
+[ 2016.962884]  9923     8.5 C/MHz     76 mW    2.1 J   130.4 I/mJ    28.2 s
+               1286: 
+[ 2051.214817] 10903     8.5 C/MHz     89 mW    2.3 J   122.7 I/mJ    25.7 s
+               1382: 
+[ 2083.445221] 11737     8.5 C/MHz     76 mW    1.8 J   155.1 I/mJ    23.9 s
+               1478: 
+[ 2114.673295] 12552     8.5 C/MHz    142 mW    3.2 J   88.3 I/mJ    22.3 s
+               1574: 
+[ 2143.902701] 13352     8.5 C/MHz    106 mW    2.2 J   125.8 I/mJ    21.0 s
+               1670: 
+[ 2172.121410] 14175     8.5 C/MHz    168 mW    3.3 J   84.5 I/mJ    19.8 s
+               1766: 
+[ 2199.331092] 14986     8.5 C/MHz    159 mW    3.0 J   94.1 I/mJ    18.7 s
+               1862: 
+[ 2225.537075] 15786     8.5 C/MHz    113 mW    2.0 J   140.0 I/mJ    17.7 s
+               1958: 
+[ 2250.731553] 16600     8.5 C/MHz    151 mW    2.6 J   109.7 I/mJ    16.9 s
+               2054: 
+[ 2274.926630] 17449     8.5 C/MHz    175 mW    2.8 J   99.4 I/mJ    16.1 s
+               2150: 
+[ 2277.602218] BQ: bq27541_battery_soc: bq27541_battery_soc = 86
+[ 2277.617651] BQ: fg_soc_calibrate: soc:86, soc_calib:86, VOLT:4210, current:115
+[ 2277.620721] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[ 2299.119490] 18204     8.5 C/MHz    195 mW    3.0 J   93.3 I/mJ    15.4 s
+               2246: 
+[ 2322.310746] 19041     8.5 C/MHz    209 mW    3.1 J   90.9 I/mJ    14.7 s
+               2342: 
+[ 2345.507731] 19867     8.5 C/MHz    205 mW    2.9 J   96.8 I/mJ    14.1 s
+               2419: 
+[ 2367.732956] CPU4: shutdown
+[ 2367.733061] psci: CPU4 killed (polled 0 ms)
+[ 2367.736728] Detected PIPT I-cache on CPU7
+[ 2367.736754] arch_timer: CPU7: Trapping CNTVCT access
+[ 2367.736758] CPU7: Booted secondary processor 0x0000000700 [0x411fd0d0]
+[ 2368.745610] 20522     8.5 C/MHz    180 mW    2.5 J   113.6 I/mJ    13.7 s
+               
+               
+               ===== CPU 7 =====
+               Frequencies: 844 960 1075 1190 1305 1401 1516 1632 1747 1862 1977 2073 2169 2265 2361 2457 2553 2649 2745 2841 3187
+               
+                844: 
+[ 2416.040961]  7170     8.5 C/MHz     57 mW    2.2 J   125.6 I/mJ    39.1 s
+                960: 
+[ 2459.314452]  8146     8.5 C/MHz     62 mW    2.1 J   131.0 I/mJ    34.4 s
+               1075: 
+[ 2486.519004] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[ 2498.581325]  9123     8.5 C/MHz     89 mW    2.7 J   102.0 I/mJ    30.7 s
+               1190: 
+[ 2534.837055] 10104     8.5 C/MHz    114 mW    3.1 J   89.0 I/mJ    27.7 s
+               1305: 
+[ 2569.072028] 11063     8.5 C/MHz    128 mW    3.2 J   86.6 I/mJ    25.3 s
+               1401: 
+[ 2601.303545] 11894     8.5 C/MHz    125 mW    2.9 J   95.4 I/mJ    23.6 s
+               1516: 
+[ 2631.542588] 12871     8.5 C/MHz    106 mW    2.3 J   121.2 I/mJ    21.8 s
+               1632: 
+[ 2660.763795] 13819     8.5 C/MHz    181 mW    3.7 J   76.2 I/mJ    20.3 s
+               1747: 
+[ 2687.980222] 14827     8.5 C/MHz    112 mW    2.1 J   132.2 I/mJ    18.9 s
+               1862: 
+[ 2714.179641] 15792     8.5 C/MHz    158 mW    2.8 J   99.9 I/mJ    17.7 s
+               1977: 
+[ 2739.375693] 16748     8.5 C/MHz    203 mW    3.4 J   82.3 I/mJ    16.7 s
+               2073: 
+[ 2763.563482] 17601     8.5 C/MHz    220 mW    3.5 J   80.1 I/mJ    15.9 s
+               2169: 
+[ 2787.758476] 18409     8.5 C/MHz    240 mW    3.6 J   76.8 I/mJ    15.2 s
+               2265: 
+[ 2801.129411] BQ: bq27541_battery_soc: bq27541_battery_soc = 85
+[ 2801.144795] BQ: fg_soc_calibrate: soc:85, soc_calib:85, VOLT:4194, current:193
+[ 2801.147357] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[ 2810.950469] 19210     8.5 C/MHz    255 mW    3.7 J   75.2 I/mJ    14.6 s
+               2361: 
+[ 2833.137310] 20042     8.5 C/MHz    244 mW    3.4 J   82.0 I/mJ    14.0 s
+               2457: 
+[ 2855.328292] 20844     8.5 C/MHz    211 mW    2.8 J   98.6 I/mJ    13.4 s
+               2553: 
+[ 2876.525309] 21668     8.5 C/MHz    146 mW    1.9 J   148.4 I/mJ    12.9 s
+               2649: 
+[ 2883.476386] QCOM-BATT: pl_fcc_vote_callback: total_fcc_ua=3000000
+[ 2897.708835] 22474     8.5 C/MHz    467 mW    5.8 J   48.1 I/mJ    12.5 s
+               2745: 
+[ 2917.891003] 23269     8.5 C/MHz    430 mW    5.2 J   54.1 I/mJ    12.0 s
+               2841: 
+[ 2938.078717] 24101     8.5 C/MHz    262 mW    3.0 J   92.0 I/mJ    11.6 s
+               3187: 
+[ 2957.283616] CPU7: shutdown
+[ 2957.283728] psci: CPU7 killed (polled 0 ms)
+[ 2957.306293] 27040     8.5 C/MHz    624 mW    6.5 J   43.3 I/mJ    10.4 s
+               
+               
+               Benchmark finished!
+[ 2957.325337] 
+               real	49m15.017s
+               user	39m53.334s
+               sys	0m1.638s
